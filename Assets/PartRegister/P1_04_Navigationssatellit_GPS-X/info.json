@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_04_Navigationssatellit_GPS-X",
+  "partName": "Navigationssatellit GPS-X",
+  "weightKg": 200.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 75.0,
+  "costUsd": 5800,
+  "description": "Navigationssatellit GPS-X: Nutzlast-Spitze für Trägerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+}

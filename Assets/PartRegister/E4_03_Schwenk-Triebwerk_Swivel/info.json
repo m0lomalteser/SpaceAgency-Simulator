@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_03_Schwenk-Triebwerk_Swivel",
+  "partName": "Schwenk-Triebwerk Swivel",
+  "weightKg": 230.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 180.0,
+  "efficiencyPercent": 62.0,
+  "durabilityHp": 70.0,
+  "costUsd": 1800,
+  "description": "Schwenk-Triebwerk Swivel: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 180 kN Schub bei 62% Effizienz."
+}

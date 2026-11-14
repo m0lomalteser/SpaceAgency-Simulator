@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_03_2x_Standard-Booster_Hammer",
+  "partName": "2x Standard-Booster Hammer",
+  "weightKg": 450.0,
+  "fuelUnits": 1200.0,
+  "thrustKn": 480.0,
+  "efficiencyPercent": 50.0,
+  "durabilityHp": 80.0,
+  "costUsd": 1800,
+  "description": "2x Standard-Booster Hammer: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 480 kN."
+}

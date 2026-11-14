@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_07_Tiefraumsonde_Voyager-Pro",
+  "partName": "Tiefraumsonde Voyager-Pro",
+  "weightKg": 900.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 110.0,
+  "costUsd": 40000,
+  "description": "Tiefraumsonde Voyager-Pro: Nutzlast-Spitze für Trägerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+}

@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_01_Test-Nasenkegel_(Leer)",
+  "partName": "Test-Nasenkegel (Leer)",
+  "weightKg": 40.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 20.0,
+  "costUsd": 0,
+  "description": "Leerer Nasenkegel ohne Nutzlast – perfekt für erste Testflüge."
+}

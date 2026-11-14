@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_06_2x_Flüssig-Booster_Light",
+  "partName": "2x Flüssig-Booster Light",
+  "weightKg": 1400.0,
+  "fuelUnits": 4500.0,
+  "thrustKn": 1600.0,
+  "efficiencyPercent": 58.0,
+  "durabilityHp": 150.0,
+  "costUsd": 6500,
+  "description": "2x Flüssig-Booster Light: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 1600 kN."
+}

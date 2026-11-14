@@ -65,6 +65,7 @@ public class PartRegistryBuilder : EditorWindow
 
         // Alle Unterordner (z.B. P01, P02, E01...) durchgehen
         string[] subDirectories = Directory.GetDirectories(registerFolderPath);
+        System.Array.Sort(subDirectories, System.StringComparer.Ordinal);
         int importedCount = 0;
 
         foreach (string dir in subDirectories)

@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_08_4x_Schwerlast-Booster_Titan",
+  "partName": "4x Schwerlast-Booster Titan",
+  "weightKg": 3000.0,
+  "fuelUnits": 9000.0,
+  "thrustKn": 3400.0,
+  "efficiencyPercent": 64.0,
+  "durabilityHp": 220.0,
+  "costUsd": 14000,
+  "description": "4x Schwerlast-Booster Titan: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 3400 kN."
+}

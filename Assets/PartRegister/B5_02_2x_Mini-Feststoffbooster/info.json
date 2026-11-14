@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_02_2x_Mini-Feststoffbooster",
+  "partName": "2x Mini-Feststoffbooster",
+  "weightKg": 250.0,
+  "fuelUnits": 600.0,
+  "thrustKn": 240.0,
+  "efficiencyPercent": 48.0,
+  "durabilityHp": 60.0,
+  "costUsd": 900,
+  "description": "2x Mini-Feststoffbooster: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 240 kN."
+}

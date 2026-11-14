@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a84a21dbc5a4693b2f5995007cc4bb, type: 3}
+  m_Name: U2_01_Keine_Oberstufe_(Adapter)_Data
+  m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
+  id: U2_01_Keine_Oberstufe_(Adapter)
+  slot: U
+  partName: Keine Oberstufe (Adapter)
+  description: Adapter ohne eigene Oberstufe. Verbindet Tank und Nutzlast ohne Zusatztriebwerk.
+  weightKg: 120
+  fuelUnits: 0
+  thrustKn: 0
+  efficiencyPercent: 0
+  durabilityHp: 50
+  costUsd: 150
+  modelPrefab: {fileID: 919132149155446097, guid: c98fbdac2c6534be8a5ef3dd34112a86, type: 3}
+  mainTexture: {fileID: 0}

@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_07_2x_Schwerlast-Booster_Kickback",
+  "partName": "2x Schwerlast-Booster Kickback",
+  "weightKg": 2100.0,
+  "fuelUnits": 6500.0,
+  "thrustKn": 2400.0,
+  "efficiencyPercent": 61.0,
+  "durabilityHp": 180.0,
+  "costUsd": 9500,
+  "description": "2x Schwerlast-Booster Kickback: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 2400 kN."
+}

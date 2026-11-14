@@ -10,11 +10,11 @@ public class PartRegistry : ScriptableObject
     // Hilfsmethode für dein 5-Slot-Pfeilmenü
     public List<RocketPartData> GetPartsBySlot(string slotName)
     {
-        return allParts.Where(p => p.slot == slotName).ToList();
+        return allParts.Where(p => p != null && p.slot == slotName).ToList();
     }
 
     public RocketPartData GetPartById(string id)
     {
-        return allParts.FirstOrDefault(p => p.id == id);
+        return allParts.FirstOrDefault(p => p != null && p.id == id);
     }
 }

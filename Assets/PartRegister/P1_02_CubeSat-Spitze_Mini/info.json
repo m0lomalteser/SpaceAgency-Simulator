@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_02_CubeSat-Spitze_Mini",
+  "partName": "CubeSat-Spitze Mini",
+  "weightKg": 60.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 35.0,
+  "costUsd": 750,
+  "description": "CubeSat-Spitze Mini: Nutzlast-Spitze für Trägerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+}

@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_05_Doppel-Düse_Gemini-2",
+  "partName": "Doppel-Düse Gemini-2",
+  "weightKg": 520.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 480.0,
+  "efficiencyPercent": 70.0,
+  "durabilityHp": 105.0,
+  "costUsd": 5500,
+  "description": "Doppel-Düse Gemini-2: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 480 kN Schub bei 70% Effizienz."
+}

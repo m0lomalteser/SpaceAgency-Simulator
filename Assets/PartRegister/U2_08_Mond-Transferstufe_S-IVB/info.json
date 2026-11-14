@@ -1,0 +1,12 @@
+{
+  "slot": "U",
+  "id": "U2_08_Mond-Transferstufe_S-IVB",
+  "partName": "Mond-Transferstufe S-IVB",
+  "weightKg": 900.0,
+  "fuelUnits": 23230.0,
+  "thrustKn": 260.0,
+  "efficiencyPercent": 82.0,
+  "durabilityHp": 120.0,
+  "costUsd": 20000,
+  "description": "Mond-Transferstufe S-IVB: Oberstufe für den Vakuum-Antrieb. Zündet nach der Trennung der Hauptstufe. 260 kN Schub bei 82% Effizienz."
+}

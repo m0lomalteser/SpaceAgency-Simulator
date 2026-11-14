@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a84a21dbc5a4693b2f5995007cc4bb, type: 3}
+  m_Name: E4_03_Schwenk-Triebwerk_Swivel_Data
+  m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
+  id: E4_03_Schwenk-Triebwerk_Swivel
+  slot: E
+  partName: Schwenk-Triebwerk Swivel
+  description: "Schwenk-Triebwerk Swivel: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 180 kN Schub bei 62% Effizienz."
+  weightKg: 230
+  fuelUnits: 0
+  thrustKn: 180
+  efficiencyPercent: 62
+  durabilityHp: 70
+  costUsd: 1800
+  modelPrefab: {fileID: 919132149155446097, guid: 6e69ca1bc7ec04b0e85a928f636aec32, type: 3}
+  mainTexture: {fileID: 0}

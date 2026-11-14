@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a84a21dbc5a4693b2f5995007cc4bb, type: 3}
+  m_Name: B5_01_Keine_Booster_Data
+  m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
+  id: B5_01_Keine_Booster
+  slot: B
+  partName: Keine Booster
+  description: Option ohne Booster. Kein Zusatzschub, kein Zusatzgewicht.
+  weightKg: 0
+  fuelUnits: 0
+  thrustKn: 0
+  efficiencyPercent: 0
+  durabilityHp: 0
+  costUsd: 0
+  modelPrefab: {fileID: 919132149155446097, guid: 2d27278cde1f247f3874db3677242718, type: 3}
+  mainTexture: {fileID: 0}

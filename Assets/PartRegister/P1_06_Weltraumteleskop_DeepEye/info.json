@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_06_Weltraumteleskop_DeepEye",
+  "partName": "Weltraumteleskop DeepEye",
+  "weightKg": 650.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 130.0,
+  "costUsd": 22000,
+  "description": "Weltraumteleskop DeepEye: Nutzlast-Spitze für Trägerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+}

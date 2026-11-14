@@ -1,0 +1,12 @@
+{
+  "slot": "U",
+  "id": "U2_06_Schwere_Stufe_Pudel",
+  "partName": "Schwere Stufe Pudel",
+  "weightKg": 520.0,
+  "fuelUnits": 11240.0,
+  "thrustKn": 140.0,
+  "efficiencyPercent": 80.0,
+  "durabilityHp": 100.0,
+  "costUsd": 12000,
+  "description": "Schwere Stufe Pudel: Oberstufe für den Vakuum-Antrieb. Zündet nach der Trennung der Hauptstufe. 140 kN Schub bei 80% Effizienz."
+}

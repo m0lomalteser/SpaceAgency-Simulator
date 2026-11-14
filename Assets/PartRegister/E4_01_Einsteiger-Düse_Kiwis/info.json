@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_01_Einsteiger-Düse_Kiwis",
+  "partName": "Einsteiger-Düse Kiwis",
+  "weightKg": 90.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 50.0,
+  "efficiencyPercent": 55.0,
+  "durabilityHp": 40.0,
+  "costUsd": 400,
+  "description": "Einsteiger-Düse Kiwis: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 50 kN Schub bei 55% Effizienz."
+}
