@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SETTINGS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
+  m_sharedMaterial: {fileID: 3156692539738432496, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -515,8 +515,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Simulator
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
+  m_sharedMaterial: {fileID: 3156692539738432496, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -652,8 +652,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SPACE AGENCY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
+  m_sharedMaterial: {fileID: 3156692539738432496, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -789,8 +789,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EXIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
+  m_sharedMaterial: {fileID: 3156692539738432496, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1047,8 +1047,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CONTINUE MISSION
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
+  m_sharedMaterial: {fileID: 3156692539738432496, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1184,8 +1184,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NEW CAMPAIGN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
+  m_sharedMaterial: {fileID: 3156692539738432496, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2082,8 +2082,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Music: Flowing in the Darkness by Realize'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
+  m_sharedMaterial: {fileID: 3156692539738432496, guid: 1af0b2fe926c74f5a9415c6c7019f064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
