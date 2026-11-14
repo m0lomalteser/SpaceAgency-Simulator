@@ -5,9 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 4acef1fddb7f6439cad240279e96346a
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 28d798826e4db4830bfb350d9e4660df
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 7ccfec2852f674e668190b2933d2ca35
+  - enabled: 1
+    path: Assets/Scenes/Mission Selection Scene.unity
+    guid: 82e7221abf7904823b8519d58327bcbc
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 8212c59d9ebc94b0aae115e9a87a1657
+  - enabled: 1
+    path: Assets/Scenes/GameUI.unity
+    guid: f01434978a0954d4ba38a6989b1b717b
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
