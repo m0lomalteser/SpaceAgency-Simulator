@@ -1,14 +1,77 @@
 
 using System;
 using System.IO;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
+// ==========================================
+// JSON SAVE DATA
+// ==========================================
+
+[Serializable]
+public class SpaceAgencySaveData
+{
+    public int version = 2;
+
+    public string agencyName = "";
+    public string logoPng = "";
+
+    public long money = 0;
+    public float mood = 50f;
+
+    public int day = 1;
+    public int month = 1;
+    public int year = 1;
+
+    public float timeOfDay = 0f;
+
+    public int tutorialStep = 0;
+    public bool tutorialDone = false;
+
+    public int totalLaunches = 0;
+
+    public int satelliteLaunches = 0;
+    public int satelliteSuccesses = 0;
+    public int satelliteFailures = 0;
+
+    public int moonLaunches = 0;
+    public int moonSuccesses = 0;
+    public int moonFailures = 0;
+
+    public int marsLaunches = 0;
+    public int marsSuccesses = 0;
+    public int marsFailures = 0;
+
+    public int consecutiveFailures = 0;
+
+    public int[] upgrades = new int[6];
+
+    public long lifetimeBudget = 0;
+    public long lifetimeSpent = 0;
+    public long lastBudget = 0;
+
+    public int pendingMission = -1;
+    public long pendingLaunchCost = 0;
+
+    public int lastResultMission = -1;
+    public int lastResultSuccess = -1;
+
+    public string lastResultText = "";
+
+    public string createdAt = "";
+    public string updatedAt = "";
+}
+
+// ==========================================
+// AGENCY MANAGER
+// ==========================================
+
 [RequireComponent(typeof(RectTransform))]
 [RequireComponent(typeof(RawImage))]
-public class AgencyCreationUI : MonoBehaviour,
+public class AgencyManager : MonoBehaviour,
     IPointerDownHandler,
     IPointerUpHandler,
     IDragHandler
@@ -51,20 +114,23 @@ public class AgencyCreationUI : MonoBehaviour,
 
     private Vector2 lastPosition;
 
-    // Verhindert mehrfache Exporte durch mehrere Instanzen.
     private static int lastSuccessfulSaveFrame = -1;
 
+    // ==========================================
+    // PATHS
+    // ==========================================
+
+    private string SaveDirectory =>
+        Application.persistentDataPath;
+
     private string RawPath =>
-        Path.Combine(
-            Application.persistentDataPath,
-            "agency_logo.raw"
-        );
+        Path.Combine(SaveDirectory, "agency_logo.raw");
 
     private string PngPath =>
-        Path.Combine(
-            Application.persistentDataPath,
-            "agency_logo.png"
-        );
+        Path.Combine(SaveDirectory, "agency_logo.png");
+
+    private string JsonPath =>
+        Path.Combine(SaveDirectory, "space_agency_save.json");
 
     // ==========================================
     // INITIALIZATION
@@ -82,7 +148,8 @@ public class AgencyCreationUI : MonoBehaviour,
         SetupButtons();
         LoadExistingData();
 
-        Debug.Log("Agency UI initialized: " + name);
+        Debug.Log("Agency Manager initialized: " + name);
+        Debug.Log("JSON path: " + JsonPath);
     }
 
     private void InitializeDrawing()
@@ -350,7 +417,7 @@ public class AgencyCreationUI : MonoBehaviour,
     }
 
     // ==========================================
-    // CLEAR
+    // CLEAR DRAWING
     // ==========================================
 
     public void ClearDrawing()
@@ -364,7 +431,101 @@ public class AgencyCreationUI : MonoBehaviour,
     }
 
     // ==========================================
-    // SAVE
+    // JSON HELPERS
+    // ==========================================
+
+    private SpaceAgencySaveData CreateDefaultSaveData()
+    {
+        SpaceAgencySaveData data = new SpaceAgencySaveData();
+
+        data.version = 2;
+        data.agencyName = "";
+        data.logoPng = "";
+
+        data.money = 0;
+        data.mood = 50f;
+
+        data.day = 1;
+        data.month = 1;
+        data.year = 1;
+
+        data.timeOfDay = 0f;
+
+        data.tutorialStep = 0;
+        data.tutorialDone = false;
+
+        data.upgrades = new int[6];
+
+        data.pendingMission = -1;
+        data.lastResultMission = -1;
+        data.lastResultSuccess = -1;
+
+        data.createdAt = "";
+        data.updatedAt = "";
+
+        return data;
+    }
+
+    private SpaceAgencySaveData ReadSaveData()
+    {
+        if (!File.Exists(JsonPath))
+            return CreateDefaultSaveData();
+
+        string json = File.ReadAllText(JsonPath);
+
+        SpaceAgencySaveData data =
+            JsonUtility.FromJson<SpaceAgencySaveData>(json);
+
+        if (data == null)
+            throw new Exception("JSON konnte nicht gelesen werden!");
+
+        NormalizeSaveData(data);
+
+        return data;
+    }
+
+    private void NormalizeSaveData(SpaceAgencySaveData data)
+    {
+        if (data.upgrades == null)
+            data.upgrades = new int[6];
+
+        if (data.lastResultText == null)
+            data.lastResultText = "";
+
+        if (data.agencyName == null)
+            data.agencyName = "";
+
+        if (data.logoPng == null)
+            data.logoPng = "";
+
+        if (string.IsNullOrEmpty(data.createdAt))
+            data.createdAt = GetCurrentTimestamp();
+    }
+
+    private string GetCurrentTimestamp()
+    {
+        return DateTime.Now.ToString(
+            "yyyy-MM-dd HH:mm:ss",
+            CultureInfo.InvariantCulture
+        );
+    }
+
+    private void WriteJsonSave(SpaceAgencySaveData data)
+    {
+        string json = JsonUtility.ToJson(data, true);
+
+        string temporaryPath = JsonPath + ".tmp";
+
+        File.WriteAllText(temporaryPath, json);
+
+        if (File.Exists(JsonPath))
+            File.Delete(JsonPath);
+
+        File.Move(temporaryPath, JsonPath);
+    }
+
+    // ==========================================
+    // SAVE AGENCY + COMPLETE JSON
     // ==========================================
 
     public void SaveAgencyData()
@@ -385,9 +546,20 @@ public class AgencyCreationUI : MonoBehaviour,
             return;
         }
 
+        if (lastSuccessfulSaveFrame == Time.frameCount)
+        {
+            Debug.LogWarning("Doppelter Speichervorgang verhindert.");
+            return;
+        }
+
         try
         {
-            // 1. Pixel prüfen
+            Directory.CreateDirectory(SaveDirectory);
+
+            // ==================================
+            // 1. CHECK DRAWING
+            // ==================================
+
             int drawnPixels = 0;
             Color32 bg = backgroundColor;
 
@@ -397,44 +569,18 @@ public class AgencyCreationUI : MonoBehaviour,
                     drawnPixels++;
             }
 
-            Debug.Log(
-                "Save request | Object: " + name +
-                " | Changed pixels: " + drawnPixels
-            );
-
-            // LEERE INSTANZEN DÜRFEN NICHT SPEICHERN
             if (drawnPixels == 0)
             {
                 Debug.LogWarning(
-                    "Leere Zeichnung erkannt. Bestehende Datei bleibt erhalten."
+                    "Leere Zeichnung. Speichern abgebrochen."
                 );
                 return;
             }
 
-            // DOPPELTEN EXPORT IM SELBEN FRAME VERHINDERN
-            if (lastSuccessfulSaveFrame == Time.frameCount)
-            {
-                Debug.LogWarning(
-                    "Doppelter Speichervorgang verhindert."
-                );
-                return;
-            }
+            // ==================================
+            // 2. CREATE PNG
+            // ==================================
 
-            // 2. RAW erstellen
-            byte[] rawBytes = new byte[pixelBuffer.Length * 4];
-
-            for (int i = 0; i < pixelBuffer.Length; i++)
-            {
-                int offset = i * 4;
-                Color32 pixel = pixelBuffer[i];
-
-                rawBytes[offset] = pixel.r;
-                rawBytes[offset + 1] = pixel.g;
-                rawBytes[offset + 2] = pixel.b;
-                rawBytes[offset + 3] = pixel.a;
-            }
-
-            // 3. PNG erstellen
             Texture2D exportTexture = new Texture2D(
                 textureSize,
                 textureSize,
@@ -455,73 +601,214 @@ public class AgencyCreationUI : MonoBehaviour,
                 return;
             }
 
-            // 4. Dateien schreiben
-            string rawTemp = RawPath + ".tmp";
-            string pngTemp = PngPath + ".tmp";
+            // Base64 für JSON
+            string logoBase64 = Convert.ToBase64String(pngBytes);
 
-            File.WriteAllBytes(rawTemp, rawBytes);
-            File.WriteAllBytes(pngTemp, pngBytes);
+            // ==================================
+            // 3. LOAD EXISTING GAME DATA
+            // ==================================
 
-            if (File.Exists(RawPath))
-                File.Delete(RawPath);
+            SpaceAgencySaveData saveData;
 
-            if (File.Exists(PngPath))
-                File.Delete(PngPath);
+            try
+            {
+                saveData = ReadSaveData();
+            }
+            catch (Exception jsonError)
+            {
+                // Keine vorhandenen Spieldaten überschreiben,
+                // wenn die vorhandene JSON-Datei defekt ist.
+                Debug.LogError(
+                    "Vorhandener Spielstand konnte nicht gelesen werden. " +
+                    "Speichern abgebrochen: " + jsonError
+                );
+                return;
+            }
 
-            File.Move(rawTemp, RawPath);
-            File.Move(pngTemp, PngPath);
+            // ==================================
+            // 4. UPDATE ONLY AGENCY INFORMATION
+            // ==================================
 
-            // 5. Metadaten
-            PlayerPrefs.SetString("SavedAgencyName", agencyName);
-            PlayerPrefs.SetString("SavedAgencyLogoPath", RawPath);
-            PlayerPrefs.SetString("SavedAgencyPngPath", PngPath);
-            PlayerPrefs.SetInt("SavedAgencyTextureSize", textureSize);
-            PlayerPrefs.SetInt("HasAgencySaveState", 1);
+            // Alle anderen Spielwerte bleiben erhalten.
+            saveData.version = 2;
+            saveData.agencyName = agencyName;
+            saveData.logoPng = logoBase64;
+
+            NormalizeSaveData(saveData);
+
+            saveData.updatedAt = GetCurrentTimestamp();
+
+            // ==================================
+            // 5. SAVE IMAGE FILES
+            // ==================================
+
+            byte[] rawBytes = new byte[pixelBuffer.Length * 4];
+
+            for (int i = 0; i < pixelBuffer.Length; i++)
+            {
+                int offset = i * 4;
+                Color32 pixel = pixelBuffer[i];
+
+                rawBytes[offset] = pixel.r;
+                rawBytes[offset + 1] = pixel.g;
+                rawBytes[offset + 2] = pixel.b;
+                rawBytes[offset + 3] = pixel.a;
+            }
+
+            File.WriteAllBytes(RawPath, rawBytes);
+            File.WriteAllBytes(PngPath, pngBytes);
+
+            // ==================================
+            // 6. SAVE JSON
+            // ==================================
+
+            WriteJsonSave(saveData);
+
+            // ==================================
+            // 7. SAVE PLAYERPREFS
+            // ==================================
+
+            PlayerPrefs.SetString(
+                "SavedAgencyName",
+                agencyName
+            );
+
+            PlayerPrefs.SetString(
+                "SavedAgencyLogoPath",
+                RawPath
+            );
+
+            PlayerPrefs.SetString(
+                "SavedAgencyPngPath",
+                PngPath
+            );
+
+            PlayerPrefs.SetInt(
+                "SavedAgencyTextureSize",
+                textureSize
+            );
+
+            PlayerPrefs.SetInt(
+                "HasAgencySaveState",
+                1
+            );
+
             PlayerPrefs.Save();
 
             lastSuccessfulSaveFrame = Time.frameCount;
 
-            Debug.Log("========== EXPORT SUCCESS ==========");
+            // ==================================
+            // 8. LOG
+            // ==================================
+
+            Debug.Log("========== AGENCY SAVE SUCCESS ==========");
             Debug.Log("Agency: " + agencyName);
             Debug.Log("Drawn pixels: " + drawnPixels);
             Debug.Log("PNG bytes: " + pngBytes.Length);
-            Debug.Log("PNG: " + PngPath);
-            Debug.Log("RAW bytes: " + rawBytes.Length);
+            Debug.Log("Base64 length: " + logoBase64.Length);
+            Debug.Log("JSON: " + JsonPath);
             Debug.Log("RAW: " + RawPath);
-            Debug.Log("====================================");
+            Debug.Log("PNG: " + PngPath);
+            Debug.Log("Money preserved: " + saveData.money);
+            Debug.Log("Mood preserved: " + saveData.mood);
+            Debug.Log("Launches preserved: " + saveData.totalLaunches);
+            Debug.Log("=========================================");
         }
         catch (Exception e)
         {
-            Debug.LogError("Export failed: " + e);
+            Debug.LogError("Agency save failed: " + e);
         }
     }
 
     // ==========================================
-    // LOAD
+    // LOAD EXISTING DATA
     // ==========================================
 
     private void LoadExistingData()
     {
-        if (PlayerPrefs.GetInt("HasAgencySaveState", 0) != 1)
-            return;
+        SpaceAgencySaveData saveData = null;
 
-        if (agencyNameInput != null)
+        // JSON zuerst laden
+        if (File.Exists(JsonPath))
+        {
+            try
+            {
+                saveData = ReadSaveData();
+
+                if (agencyNameInput != null)
+                    agencyNameInput.text = saveData.agencyName;
+
+                // Logo direkt aus JSON-Base64 laden
+                if (!string.IsNullOrEmpty(saveData.logoPng))
+                {
+                    byte[] pngBytes =
+                        Convert.FromBase64String(saveData.logoPng);
+
+                    if (LoadPngTexture(pngBytes))
+                    {
+                        Debug.Log("Agency logo loaded from JSON!");
+                        return;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("JSON load error: " + e);
+            }
+        }
+
+        // Fallback: PlayerPrefs
+        if (agencyNameInput != null && saveData == null)
         {
             agencyNameInput.text =
                 PlayerPrefs.GetString("SavedAgencyName", "");
         }
 
-        string path = PlayerPrefs.GetString(
+        // Fallback: RAW-Datei
+        string rawPath = PlayerPrefs.GetString(
             "SavedAgencyLogoPath",
             RawPath
         );
 
-        if (!File.Exists(path))
+        if (File.Exists(rawPath))
         {
-            Debug.LogWarning("Keine RAW-Datei gefunden.");
-            return;
+            LoadRawTexture(rawPath);
+        }
+    }
+
+    private bool LoadPngTexture(byte[] pngBytes)
+    {
+        Texture2D loadedTexture = new Texture2D(2, 2);
+
+        if (!loadedTexture.LoadImage(pngBytes))
+        {
+            Destroy(loadedTexture);
+            return false;
         }
 
+        if (loadedTexture.width != loadedTexture.height ||
+            loadedTexture.width < 16 ||
+            loadedTexture.width > 4096)
+        {
+            Destroy(loadedTexture);
+            Debug.LogWarning("Ungültige Logo-Auflösung.");
+            return false;
+        }
+
+        textureSize = loadedTexture.width;
+
+        pixelBuffer = loadedTexture.GetPixels32();
+
+        Destroy(loadedTexture);
+
+        CreateDisplayTexture();
+        UpdateDisplay();
+
+        return true;
+    }
+
+    private bool LoadRawTexture(string path)
+    {
         try
         {
             int savedSize = PlayerPrefs.GetInt(
@@ -531,18 +818,15 @@ public class AgencyCreationUI : MonoBehaviour,
 
             byte[] rawBytes = File.ReadAllBytes(path);
 
-            long expectedLength = (long)savedSize * savedSize * 4;
+            long expectedLength =
+                (long)savedSize * savedSize * 4;
 
             if (savedSize < 16 ||
                 savedSize > 4096 ||
                 rawBytes.LongLength != expectedLength)
             {
-                Debug.LogError(
-                    "Ungültige RAW-Datei. Erwartet: " +
-                    expectedLength + " Bytes, erhalten: " +
-                    rawBytes.Length
-                );
-                return;
+                Debug.LogError("Ungültige RAW-Datei!");
+                return false;
             }
 
             Color32[] loadedPixels =
@@ -567,10 +851,13 @@ public class AgencyCreationUI : MonoBehaviour,
             UpdateDisplay();
 
             Debug.Log("RAW texture loaded successfully!");
+
+            return true;
         }
         catch (Exception e)
         {
-            Debug.LogError("Load failed: " + e);
+            Debug.LogError("RAW load failed: " + e);
+            return false;
         }
     }
 
@@ -581,6 +868,11 @@ public class AgencyCreationUI : MonoBehaviour,
     public Texture2D GetDrawingTexture()
     {
         return drawingTexture;
+    }
+
+    public string GetSaveFilePath()
+    {
+        return JsonPath;
     }
 
     private void OnDestroy()
