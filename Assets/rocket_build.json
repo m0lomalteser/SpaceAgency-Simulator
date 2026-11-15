@@ -1,62 +1,62 @@
 {
-    "rocketName": "Rocket_20261114_223320",
-    "savedAt": "2026-11-14 22:33:20",
-    "totalCost": 410000000,
-    "totalWeightKg": 2458.0,
-    "totalFuelUnits": 16620.0,
-    "totalThrustKn": 45.0,
-    "durabilityHp": 346.0,
-    "explosionProbability": 0.5799999833106995,
+    "rocketName": "Rocket_20261115_052417",
+    "savedAt": "2026-11-15 05:24:17",
+    "totalCost": 38200000,
+    "totalWeightKg": 712.0,
+    "totalFuelUnits": 3000.0,
+    "totalThrustKn": 290.0,
+    "durabilityHp": 237.0,
+    "explosionProbability": 0.7089999914169312,
     "parts": [
         {
             "slot": "P",
-            "id": "P1_08_Bemannte_Kapsel_Merkur-1",
-            "partName": "Mercury-1 Capsule",
-            "costUsd": 320000000,
-            "weightKg": 1400.0,
+            "id": "P1_02_CubeSat-Spitze_Mini",
+            "partName": "CubeSat Deployer",
+            "costUsd": 1200000,
+            "weightKg": 60.0,
             "fuelUnits": 0.0,
             "thrustKn": 0.0,
-            "durabilityHp": 190.0
+            "durabilityHp": 35.0
         },
         {
             "slot": "U",
-            "id": "U2_04_Präzisions-Stufe_Agena",
-            "partName": "Agena Precision Stage",
-            "costUsd": 35000000,
-            "weightKg": 200.0,
-            "fuelUnits": 4350.0,
-            "thrustKn": 45.0,
-            "durabilityHp": 80.0
+            "id": "U2_01_Keine_Oberstufe_(Adapter)",
+            "partName": "Stage Adapter",
+            "costUsd": 2500000,
+            "weightKg": 120.0,
+            "fuelUnits": 0.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 50.0
         },
         {
             "slot": "T",
-            "id": "T3_03_Standard-Tank_S500",
-            "partName": "Standard Tank S500",
-            "costUsd": 55000000,
-            "weightKg": 858.0,
-            "fuelUnits": 12270.0,
+            "id": "T3_01_Mini-Tank_S100",
+            "partName": "Mini Tank S100",
+            "costUsd": 12000000,
+            "weightKg": 192.0,
+            "fuelUnits": 2400.0,
             "thrustKn": 0.0,
-            "durabilityHp": 76.0
+            "durabilityHp": 52.0
         },
         {
             "slot": "E",
-            "id": "E4_04_Spar-Triebwerk_AeroJet",
-            "partName": "AeroJet Economy Engine",
-            "costUsd": 0,
-            "weightKg": 0.0,
+            "id": "E4_01_Einsteiger-Düse_Kiwis",
+            "partName": "Starter Nozzle",
+            "costUsd": 4500000,
+            "weightKg": 90.0,
             "fuelUnits": 0.0,
-            "thrustKn": 0.0,
-            "durabilityHp": 0.0
+            "thrustKn": 50.0,
+            "durabilityHp": 40.0
         },
         {
             "slot": "B",
             "id": "B5_02_2x_Mini-Feststoffbooster",
             "partName": "Mini Solid Boosters (x2)",
-            "costUsd": 0,
-            "weightKg": 0.0,
-            "fuelUnits": 0.0,
-            "thrustKn": 0.0,
-            "durabilityHp": 0.0
+            "costUsd": 18000000,
+            "weightKg": 250.0,
+            "fuelUnits": 600.0,
+            "thrustKn": 240.0,
+            "durabilityHp": 60.0
         }
     ]
 }

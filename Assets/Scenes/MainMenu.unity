@@ -1649,7 +1649,7 @@ MonoBehaviour:
   continueMissionButton: {fileID: 1789751421}
   settingsButton: {fileID: 2109635258}
   exitButton: {fileID: 305679098}
-  newCampaignSceneName: Game
+  newCampaignSceneName: Setup
   continueMissionSceneName: ContinueMission
   settingsSceneName: Settings
 --- !u!1 &1648254806
