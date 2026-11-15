@@ -1,12 +1,12 @@
 {
   "slot": "B",
   "id": "B5_05_2x_Lange_Booster_Thumper",
-  "partName": "2x Lange Booster Thumper",
+  "partName": "Thumper Long Solids (x2)",
   "weightKg": 1100.0,
   "fuelUnits": 3000.0,
   "thrustKn": 1300.0,
   "efficiencyPercent": 55.0,
   "durabilityHp": 120.0,
-  "costUsd": 4500,
-  "description": "2x Lange Booster Thumper: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 1300 kN."
+  "costUsd": 95000000,
+  "description": "Long-burn solids inspired by Shuttle SRB geometry."
 }

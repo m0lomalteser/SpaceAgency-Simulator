@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: P1_05_Kommunikationssatellit_GeoCom
   slot: P
-  partName: Kommunikationssatellit GeoCom
-  description: "Kommunikationssatellit GeoCom: Nutzlast-Spitze f\xFCr Tr\xE4gerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+  partName: "GeoCom Relay Satellite"
+  description: "GEO communications satellite."
   weightKg: 350
   fuelUnits: 0
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 100
-  costUsd: 11000
+  costUsd: 280000000
   modelPrefab: {fileID: 919132149155446097, guid: b3069e5d2ae6d45d69f58f07dbfbd8df, type: 3}
   mainTexture: {fileID: 0}

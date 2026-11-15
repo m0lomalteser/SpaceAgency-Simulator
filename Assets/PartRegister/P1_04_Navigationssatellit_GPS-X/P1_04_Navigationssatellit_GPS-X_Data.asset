@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: P1_04_Navigationssatellit_GPS-X
   slot: P
-  partName: Navigationssatellit GPS-X
-  description: "Navigationssatellit GPS-X: Nutzlast-Spitze f\xFCr Tr\xE4gerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+  partName: "GPS-X NavSat"
+  description: "GPS/GNSS navigation satellite bus."
   weightKg: 200
   fuelUnits: 0
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 75
-  costUsd: 5800
+  costUsd: 180000000
   modelPrefab: {fileID: 919132149155446097, guid: 4bfa1ddb8f68d4ebca55411f1ce9ad17, type: 3}
   mainTexture: {fileID: 0}

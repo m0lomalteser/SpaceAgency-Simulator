@@ -1,12 +1,12 @@
 {
   "slot": "E",
   "id": "E4_09_4er-Cluster_Mammut",
-  "partName": "4er-Cluster Mammut",
+  "partName": "Mammoth Quad Cluster",
   "weightKg": 2500.0,
   "fuelUnits": 0.0,
   "thrustKn": 2800.0,
   "efficiencyPercent": 88.0,
   "durabilityHp": 225.0,
-  "costUsd": 40000,
-  "description": "4er-Cluster Mammut: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 2800 kN Schub bei 88% Effizienz."
+  "costUsd": 210000000,
+  "description": "Four-engine cluster for super-heavy cores."
 }

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: B5_08_4x_Schwerlast-Booster_Titan
   slot: B
-  partName: 4x Schwerlast-Booster Titan
-  description: "4x Schwerlast-Booster Titan: Booster-Paket f\xFCr zus\xE4tzlichen Startschub. Zusatzschub: 3400 kN."
+  partName: "Titan Quad Boosters (x4)"
+  description: "Four heavy solids for Titan-scale thrust."
   weightKg: 3000
   fuelUnits: 9000
   thrustKn: 3400
   efficiencyPercent: 64
   durabilityHp: 220
-  costUsd: 14000
+  costUsd: 380000000
   modelPrefab: {fileID: 919132149155446097, guid: eb43bed8948db4f87b873a18fa0057fc, type: 3}
   mainTexture: {fileID: 0}

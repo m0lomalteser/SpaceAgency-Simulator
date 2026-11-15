@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: U2_02_Mikro-Stufe_Spark
   slot: U
-  partName: Mikro-Stufe Spark
-  description: "Mikro-Stufe Spark: Oberstufe f\xFCr den Vakuum-Antrieb. Z\xFCndet nach der Trennung der Hauptstufe. 12 kN Schub bei 58% Effizienz."
+  partName: "Spark Kick Stage"
+  description: "Tiny kick stage for orbit circularization."
   weightKg: 60
   fuelUnits: 1220
   thrustKn: 12
   efficiencyPercent: 58
   durabilityHp: 60
-  costUsd: 1200
+  costUsd: 8000000
   modelPrefab: {fileID: 919132149155446097, guid: 6bd8bc5e813bd46098c79c67a047d6eb, type: 3}
   mainTexture: {fileID: 0}

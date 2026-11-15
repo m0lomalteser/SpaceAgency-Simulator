@@ -1,12 +1,12 @@
 {
   "slot": "T",
   "id": "T3_01_Mini-Tank_S100",
-  "partName": "Mini-Tank S100",
+  "partName": "Mini Tank S100",
   "weightKg": 192.0,
   "fuelUnits": 2400.0,
   "thrustKn": 0.0,
   "efficiencyPercent": 0.0,
   "durabilityHp": 52.0,
-  "costUsd": 1440,
-  "description": "Mini-Tank S100: Treibstofftank für die Hauptstufe. Bildet das Rückgrat jeder Rakete. Fassungsvermögen: 2400 Einheiten."
+  "costUsd": 12000000,
+  "description": "Small propellant tank for sounding / light stages."
 }

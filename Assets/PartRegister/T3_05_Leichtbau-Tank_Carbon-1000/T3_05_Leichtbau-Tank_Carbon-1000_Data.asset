@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: T3_05_Leichtbau-Tank_Carbon-1000
   slot: T
-  partName: Leichtbau-Tank Carbon-1000
-  description: "Leichtbau-Tank Carbon-1000: Treibstofftank f\xFCr die Hauptstufe. Bildet das R\xFCckgrat jeder Rakete. Fassungsverm\xF6gen: 22720 Einheiten."
+  partName: "Carbon Tank C1000"
+  description: "Composite light-weight tank."
   weightKg: 727
   fuelUnits: 22720
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 100
-  costUsd: 24992
+  costUsd: 120000000
   modelPrefab: {fileID: 919132149155446097, guid: 09ffd63f9ed07425b905fa5d4024af2c, type: 3}
   mainTexture: {fileID: 0}

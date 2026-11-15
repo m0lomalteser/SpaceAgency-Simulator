@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: E4_07_Schwerlast-Triebwerk_Mainsail
   slot: E
-  partName: Schwerlast-Triebwerk Mainsail
-  description: "Schwerlast-Triebwerk Mainsail: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 1200 kN Schub bei 79% Effizienz."
+  partName: "Mainsail Heavy Engine"
+  description: "Heavy-lift single engine approaching RS-25 thrust class."
   weightKg: 1250
   fuelUnits: 0
   thrustKn: 1200
   efficiencyPercent: 79
   durabilityHp: 155
-  costUsd: 16000
+  costUsd: 95000000
   modelPrefab: {fileID: 919132149155446097, guid: 4e219c650be5342169f3b5b2ce5c137f, type: 3}
   mainTexture: {fileID: 0}

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: E4_06_Hochdruck-Triebwerk_Raptor-S
   slot: E
-  partName: Hochdruck-Triebwerk Raptor-S
-  description: "Hochdruck-Triebwerk Raptor-S: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 750 kN Schub bei 74% Effizienz."
+  partName: "High-Pressure Raptor-S"
+  description: "High-chamber-pressure engine in modern commercial class."
   weightKg: 800
   fuelUnits: 0
   thrustKn: 750
   efficiencyPercent: 74
   durabilityHp: 125
-  costUsd: 9000
+  costUsd: 65000000
   modelPrefab: {fileID: 919132149155446097, guid: 070bafcfd2d2b4d2a8774224a02f5fae, type: 3}
   mainTexture: {fileID: 0}

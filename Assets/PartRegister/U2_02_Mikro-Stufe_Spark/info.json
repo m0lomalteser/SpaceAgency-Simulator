@@ -1,12 +1,12 @@
 {
   "slot": "U",
   "id": "U2_02_Mikro-Stufe_Spark",
-  "partName": "Mikro-Stufe Spark",
+  "partName": "Spark Kick Stage",
   "weightKg": 60.0,
   "fuelUnits": 1220.0,
   "thrustKn": 12.0,
   "efficiencyPercent": 58.0,
   "durabilityHp": 60.0,
-  "costUsd": 1200,
-  "description": "Mikro-Stufe Spark: Oberstufe für den Vakuum-Antrieb. Zündet nach der Trennung der Hauptstufe. 12 kN Schub bei 58% Effizienz."
+  "costUsd": 8000000,
+  "description": "Tiny kick stage for orbit circularization."
 }

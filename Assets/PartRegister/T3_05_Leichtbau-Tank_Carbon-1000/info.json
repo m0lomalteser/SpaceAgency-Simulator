@@ -1,12 +1,12 @@
 {
   "slot": "T",
   "id": "T3_05_Leichtbau-Tank_Carbon-1000",
-  "partName": "Leichtbau-Tank Carbon-1000",
+  "partName": "Carbon Tank C1000",
   "weightKg": 727.0,
   "fuelUnits": 22720.0,
   "thrustKn": 0.0,
   "efficiencyPercent": 0.0,
   "durabilityHp": 100.0,
-  "costUsd": 24992,
-  "description": "Leichtbau-Tank Carbon-1000: Treibstofftank für die Hauptstufe. Bildet das Rückgrat jeder Rakete. Fassungsvermögen: 22720 Einheiten."
+  "costUsd": 120000000,
+  "description": "Composite light-weight tank."
 }

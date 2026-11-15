@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: U2_05_Kryo-Stufe_Centaur
   slot: U
-  partName: Kryo-Stufe Centaur
-  description: "Kryo-Stufe Centaur: Oberstufe f\xFCr den Vakuum-Antrieb. Z\xFCndet nach der Trennung der Hauptstufe. 80 kN Schub bei 75% Effizienz."
+  partName: "Centaur Cryo Stage"
+  description: "NASA Centaur LH2/LOX upper stage (~$30–50M+ class)."
   weightKg: 380
   fuelUnits: 8180
   thrustKn: 80
   efficiencyPercent: 75
   durabilityHp: 90
-  costUsd: 7500
+  costUsd: 55000000
   modelPrefab: {fileID: 919132149155446097, guid: 0b3bb60f6a5f04fc5baf32d0b8b3a834, type: 3}
   mainTexture: {fileID: 0}

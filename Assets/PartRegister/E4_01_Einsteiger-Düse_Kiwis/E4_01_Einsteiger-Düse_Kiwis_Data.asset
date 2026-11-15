@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: "E4_01_Einsteiger-Düse_Kiwis"
   slot: E
-  partName: "Einsteiger-Düse Kiwis"
-  description: "Einsteiger-Düse Kiwis: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 50 kN Schub bei 55% Effizienz."
+  partName: "Starter Nozzle"
+  description: "Low-cost first engine for suborbital and tech demos."
   weightKg: 90
   fuelUnits: 0
   thrustKn: 50
   efficiencyPercent: 55
   durabilityHp: 40
-  costUsd: 400
+  costUsd: 4500000
   modelPrefab: {fileID: 919132149155446097, guid: 634e7bbc9182c42c59b71f8a5ebbfe5d, type: 3}
   mainTexture: {fileID: 0}

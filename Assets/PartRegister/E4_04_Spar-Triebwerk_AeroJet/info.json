@@ -1,12 +1,12 @@
 {
   "slot": "E",
   "id": "E4_04_Spar-Triebwerk_AeroJet",
-  "partName": "Spar-Triebwerk AeroJet",
+  "partName": "AeroJet Economy Engine",
   "weightKg": 340.0,
   "fuelUnits": 0.0,
   "thrustKn": 300.0,
   "efficiencyPercent": 66.0,
   "durabilityHp": 85.0,
-  "costUsd": 3200,
-  "description": "Spar-Triebwerk AeroJet: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 300 kN Schub bei 66% Effizienz."
+  "costUsd": 35000000,
+  "description": "Efficient mid-tier engine with solid Isp."
 }

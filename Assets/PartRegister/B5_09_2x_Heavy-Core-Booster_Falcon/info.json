@@ -1,12 +1,12 @@
 {
   "slot": "B",
   "id": "B5_09_2x_Heavy-Core-Booster_Falcon",
-  "partName": "2x Heavy-Core-Booster Falcon",
+  "partName": "Heavy Side Cores (x2)",
   "weightKg": 4200.0,
   "fuelUnits": 13000.0,
   "thrustKn": 4800.0,
   "efficiencyPercent": 67.0,
   "durabilityHp": 270.0,
-  "costUsd": 20000,
-  "description": "2x Heavy-Core-Booster Falcon: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 4800 kN."
+  "costUsd": 520000000,
+  "description": "Falcon Heavy-class liquid side cores."
 }

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: B5_04_4x_Standard-Booster_Quad
   slot: B
-  partName: 4x Standard-Booster Quad
-  description: "4x Standard-Booster Quad: Booster-Paket f\xFCr zus\xE4tzlichen Startschub. Zusatzschub: 760 kN."
+  partName: "Quad Solid Boosters (x4)"
+  description: "Four solids for heavy lift off the pad."
   weightKg: 700
   fuelUnits: 1800
   thrustKn: 760
   efficiencyPercent: 52
   durabilityHp: 100
-  costUsd: 2900
+  costUsd: 75000000
   modelPrefab: {fileID: 919132149155446097, guid: 87bf7b1e5564e43558e7c1dd45e6e1be, type: 3}
   mainTexture: {fileID: 0}

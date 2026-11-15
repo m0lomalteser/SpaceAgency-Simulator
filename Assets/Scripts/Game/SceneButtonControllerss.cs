@@ -2,20 +2,29 @@ using UnityEngine;
 
 public class SceneButtonControllerss : MonoBehaviour
 {
+    private CustomizeSelectionUI selectionUI;
+
     public void TriggerCamera()
     {
-        Debug.Log("[SceneButton] Button wurde geklickt!");
+        OpenCustomizeSelection();
+    }
 
-        AutoFramingCamera framingCamera = FindFirstObjectByType<AutoFramingCamera>();
+    public void OpenCustomizeSelection()
+    {
+        if (selectionUI == null)
+        {
+            selectionUI = FindFirstObjectByType<CustomizeSelectionUI>();
+            if (selectionUI == null)
+            {
+                GameObject host = gameObject;
+                selectionUI = host.GetComponent<CustomizeSelectionUI>();
+                if (selectionUI == null)
+                {
+                    selectionUI = host.AddComponent<CustomizeSelectionUI>();
+                }
+            }
+        }
 
-        if (framingCamera != null)
-        {
-            Debug.Log("[SceneButton] Kamera gefunden! Triggere Fahrt zu Modell 1...");
-            framingCamera.TriggerTransitionToModel1();
-        }
-        else
-        {
-            Debug.LogError("[SceneButton] Keine AutoFramingCamera in der Szene gefunden!");
-        }
+        selectionUI.Open();
     }
 }

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: P1_09_Bemannte_Kapsel_Orion-3
   slot: P
-  partName: Bemannte Kapsel Orion-3
-  description: "Bemannte Kapsel Orion-3: Nutzlast-Spitze f\xFCr Tr\xE4gerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+  partName: "Orion Crew Capsule"
+  description: "NASA Orion-class crew vehicle (~$0.9B production class)."
   weightKg: 2100
   fuelUnits: 0
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 260
-  costUsd: 88000
+  costUsd: 900000000
   modelPrefab: {fileID: 919132149155446097, guid: 8c9b9b04b21d54fd0b4387e380a51cea, type: 3}
   mainTexture: {fileID: 0}

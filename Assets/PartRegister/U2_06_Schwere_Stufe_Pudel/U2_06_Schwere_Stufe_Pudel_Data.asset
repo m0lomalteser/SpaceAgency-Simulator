@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: U2_06_Schwere_Stufe_Pudel
   slot: U
-  partName: Schwere Stufe Pudel
-  description: "Schwere Stufe Pudel: Oberstufe f\xFCr den Vakuum-Antrieb. Z\xFCndet nach der Trennung der Hauptstufe. 140 kN Schub bei 80% Effizienz."
+  partName: "Heavy Upper Stage"
+  description: "Heavy restartable upper for GTO/TLEO."
   weightKg: 520
   fuelUnits: 11240
   thrustKn: 140
   efficiencyPercent: 80
   durabilityHp: 100
-  costUsd: 12000
+  costUsd: 75000000
   modelPrefab: {fileID: 919132149155446097, guid: 60b2a9bffeb9f4ccfbd75e273733039f, type: 3}
   mainTexture: {fileID: 0}

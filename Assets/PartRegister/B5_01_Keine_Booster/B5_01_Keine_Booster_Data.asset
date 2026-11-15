@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: B5_01_Keine_Booster
   slot: B
-  partName: Keine Booster
-  description: Option ohne Booster. Kein Zusatzschub, kein Zusatzgewicht.
+  partName: "No Boosters"
+  description: "Fly without strap-on boosters. Clean core-stage profile."
   weightKg: 0
   fuelUnits: 0
   thrustKn: 0

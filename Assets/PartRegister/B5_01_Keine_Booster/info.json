@@ -1,12 +1,12 @@
 {
   "slot": "B",
   "id": "B5_01_Keine_Booster",
-  "partName": "Keine Booster",
+  "partName": "No Boosters",
   "weightKg": 0.0,
   "fuelUnits": 0.0,
   "thrustKn": 0.0,
   "efficiencyPercent": 0.0,
   "durabilityHp": 0.0,
   "costUsd": 0,
-  "description": "Option ohne Booster. Kein Zusatzschub, kein Zusatzgewicht."
+  "description": "Fly without strap-on boosters. Clean core-stage profile."
 }

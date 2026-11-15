@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: E4_10_5er-Cluster_F1-Titan
   slot: E
-  partName: 5er-Cluster F1-Titan
-  description: "5er-Cluster F1-Titan: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 4500 kN Schub bei 92% Effizienz."
+  partName: "F-1 Titan Cluster"
+  description: "Five F-1-class chambers — Saturn V first-stage inspired."
   weightKg: 3800
   fuelUnits: 0
   thrustKn: 4500
   efficiencyPercent: 92
   durabilityHp: 285
-  costUsd: 62000
+  costUsd: 380000000
   modelPrefab: {fileID: 919132149155446097, guid: 91580a2a0567a4538a46a07262800ee9, type: 3}
   mainTexture: {fileID: 0}

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: B5_07_2x_Schwerlast-Booster_Kickback
   slot: B
-  partName: 2x Schwerlast-Booster Kickback
-  description: "2x Schwerlast-Booster Kickback: Booster-Paket f\xFCr zus\xE4tzlichen Startschub. Zusatzschub: 2400 kN."
+  partName: "Kickback Heavy Solids (x2)"
+  description: "SRB-class heavy solids (~$40M+ each historically, game-scaled pair)."
   weightKg: 2100
   fuelUnits: 6500
   thrustKn: 2400
   efficiencyPercent: 61
   durabilityHp: 180
-  costUsd: 9500
+  costUsd: 220000000
   modelPrefab: {fileID: 919132149155446097, guid: 3cc51cada30ad4be9bff4d482b911ec8, type: 3}
   mainTexture: {fileID: 0}

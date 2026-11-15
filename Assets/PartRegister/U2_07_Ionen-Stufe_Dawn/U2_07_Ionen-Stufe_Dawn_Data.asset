@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: U2_07_Ionen-Stufe_Dawn
   slot: U
-  partName: Ionen-Stufe Dawn
-  description: "Ionen-Oberstufe mit sehr geringem Schub, aber h\xF6chster Effizienz im Spiel."
+  partName: "Dawn Ion Stage"
+  description: "Ion propulsion stage — Dawn mission heritage."
   weightKg: 420
   fuelUnits: 3680
   thrustKn: 30
   efficiencyPercent: 95
   durabilityHp: 110
-  costUsd: 30000
+  costUsd: 95000000
   modelPrefab: {fileID: 919132149155446097, guid: 1ef6caa7df3d542bbbe2a2d577014cae, type: 3}
   mainTexture: {fileID: 0}

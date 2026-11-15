@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: E4_02_Standard-Triebwerk_Reliant
   slot: E
-  partName: Standard-Triebwerk Reliant
-  description: "Standard-Triebwerk Reliant: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 100 kN Schub bei 58% Effizienz."
+  partName: "Reliant Engine"
+  description: "Workhorse single-chamber engine for light LEO vehicles."
   weightKg: 150
   fuelUnits: 0
   thrustKn: 100
   efficiencyPercent: 58
   durabilityHp: 55
-  costUsd: 900
+  costUsd: 12000000
   modelPrefab: {fileID: 919132149155446097, guid: 155d9f90b994742a0afb02135cc26e22, type: 3}
   mainTexture: {fileID: 0}

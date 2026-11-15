@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: B5_03_2x_Standard-Booster_Hammer
   slot: B
-  partName: 2x Standard-Booster Hammer
-  description: "2x Standard-Booster Hammer: Booster-Paket f\xFCr zus\xE4tzlichen Startschub. Zusatzschub: 480 kN."
+  partName: "Hammer Solid Boosters (x2)"
+  description: "Medium solid motors in the Atlas/Delta strap-on class."
   weightKg: 450
   fuelUnits: 1200
   thrustKn: 480
   efficiencyPercent: 50
   durabilityHp: 80
-  costUsd: 1800
+  costUsd: 40000000
   modelPrefab: {fileID: 919132149155446097, guid: 58283cd5ab2fe4f9ba36dbe34388d6ff, type: 3}
   mainTexture: {fileID: 0}

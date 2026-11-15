@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: E4_09_4er-Cluster_Mammut
   slot: E
-  partName: 4er-Cluster Mammut
-  description: "4er-Cluster Mammut: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 2800 kN Schub bei 88% Effizienz."
+  partName: "Mammoth Quad Cluster"
+  description: "Four-engine cluster for super-heavy cores."
   weightKg: 2500
   fuelUnits: 0
   thrustKn: 2800
   efficiencyPercent: 88
   durabilityHp: 225
-  costUsd: 40000
+  costUsd: 210000000
   modelPrefab: {fileID: 919132149155446097, guid: 1d0a36b771167431ba6e67a5714d3222, type: 3}
   mainTexture: {fileID: 0}

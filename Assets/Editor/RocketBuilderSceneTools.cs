@@ -4,13 +4,16 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-/// <summary>
-/// Editor-Helfer rund um die Builder-Szene.
-/// </summary>
 public static class RocketBuilderSceneTools
 {
     private const string ScenePath = "Assets/Scenes/RocketBuilder.unity";
     private const string MenuRoot = "SpaceAgency/Rocket Builder/";
+
+    [MenuItem(MenuRoot + "Builder-Szene komplett generieren", priority = 10)]
+    public static void GenerateBuilderScene()
+    {
+        RocketBuilderSceneSetup.SetupScene();
+    }
 
     [MenuItem(MenuRoot + "Builder-Szene öffnen", priority = 20)]
     public static void OpenBuilderScene()

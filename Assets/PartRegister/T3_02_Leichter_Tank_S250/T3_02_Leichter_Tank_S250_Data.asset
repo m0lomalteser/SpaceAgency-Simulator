@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: T3_02_Leichter_Tank_S250
   slot: T
-  partName: Leichter Tank S250
-  description: "Leichter Tank S250: Treibstofftank f\xFCr die Hauptstufe. Bildet das R\xFCckgrat jeder Rakete. Fassungsverm\xF6gen: 5960 Einheiten."
+  partName: "Light Tank S250"
+  description: "Light aluminum tank structure."
   weightKg: 447
   fuelUnits: 5960
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 64
-  costUsd: 3874
+  costUsd: 28000000
   modelPrefab: {fileID: 919132149155446097, guid: c5fafa248ba8447d2bec277ec495f81e, type: 3}
   mainTexture: {fileID: 0}

@@ -1,12 +1,12 @@
 {
   "slot": "E",
   "id": "E4_07_Schwerlast-Triebwerk_Mainsail",
-  "partName": "Schwerlast-Triebwerk Mainsail",
+  "partName": "Mainsail Heavy Engine",
   "weightKg": 1250.0,
   "fuelUnits": 0.0,
   "thrustKn": 1200.0,
   "efficiencyPercent": 79.0,
   "durabilityHp": 155.0,
-  "costUsd": 16000,
-  "description": "Schwerlast-Triebwerk Mainsail: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 1200 kN Schub bei 79% Effizienz."
+  "costUsd": 95000000,
+  "description": "Heavy-lift single engine approaching RS-25 thrust class."
 }

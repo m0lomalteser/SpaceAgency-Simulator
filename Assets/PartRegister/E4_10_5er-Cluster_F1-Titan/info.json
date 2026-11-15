@@ -1,12 +1,12 @@
 {
   "slot": "E",
   "id": "E4_10_5er-Cluster_F1-Titan",
-  "partName": "5er-Cluster F1-Titan",
+  "partName": "F-1 Titan Cluster",
   "weightKg": 3800.0,
   "fuelUnits": 0.0,
   "thrustKn": 4500.0,
   "efficiencyPercent": 92.0,
   "durabilityHp": 285.0,
-  "costUsd": 62000,
-  "description": "5er-Cluster F1-Titan: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 4500 kN Schub bei 92% Effizienz."
+  "costUsd": 380000000,
+  "description": "Five F-1-class chambers — Saturn V first-stage inspired."
 }

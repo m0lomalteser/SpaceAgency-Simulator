@@ -1,12 +1,12 @@
 {
   "slot": "T",
   "id": "T3_04_Verlängerter_Tank_S800",
-  "partName": "Verlängerter Tank S800",
+  "partName": "Extended Tank S800",
   "weightKg": 1147.0,
   "fuelUnits": 17660.0,
   "thrustKn": 0.0,
   "efficiencyPercent": 0.0,
   "durabilityHp": 88.0,
-  "costUsd": 13245,
-  "description": "Verlängerter Tank S800: Treibstofftank für die Hauptstufe. Bildet das Rückgrat jeder Rakete. Fassungsvermögen: 17660 Einheiten."
+  "costUsd": 85000000,
+  "description": "Stretched tank for longer burns."
 }

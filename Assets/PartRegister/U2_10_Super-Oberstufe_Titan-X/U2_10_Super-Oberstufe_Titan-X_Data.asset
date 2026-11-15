@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: U2_10_Super-Oberstufe_Titan-X
   slot: U
-  partName: Super-Oberstufe Titan-X
-  description: "Super-Oberstufe Titan-X: Oberstufe f\xFCr den Vakuum-Antrieb. Z\xFCndet nach der Trennung der Hauptstufe. 520 kN Schub bei 90% Effizienz."
+  partName: "Titan-X Super Stage"
+  description: "Super-heavy upper for massive payloads."
   weightKg: 1600
   fuelUnits: 37710
   thrustKn: 520
   efficiencyPercent: 90
   durabilityHp: 140
-  costUsd: 70000
+  costUsd: 220000000
   modelPrefab: {fileID: 919132149155446097, guid: 01eada48cda93496c89878a0b9833476, type: 3}
   mainTexture: {fileID: 0}

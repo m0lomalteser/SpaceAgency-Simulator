@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: B5_09_2x_Heavy-Core-Booster_Falcon
   slot: B
-  partName: 2x Heavy-Core-Booster Falcon
-  description: "2x Heavy-Core-Booster Falcon: Booster-Paket f\xFCr zus\xE4tzlichen Startschub. Zusatzschub: 4800 kN."
+  partName: "Heavy Side Cores (x2)"
+  description: "Falcon Heavy-class liquid side cores."
   weightKg: 4200
   fuelUnits: 13000
   thrustKn: 4800
   efficiencyPercent: 67
   durabilityHp: 270
-  costUsd: 20000
+  costUsd: 520000000
   modelPrefab: {fileID: 919132149155446097, guid: 3d4850b07adaf4bf2a430beea8a3412f, type: 3}
   mainTexture: {fileID: 0}

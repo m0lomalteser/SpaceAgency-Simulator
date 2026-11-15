@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: P1_02_CubeSat-Spitze_Mini
   slot: P
-  partName: CubeSat-Spitze Mini
-  description: "CubeSat-Spitze Mini: Nutzlast-Spitze f\xFCr Tr\xE4gerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+  partName: "CubeSat Deployer"
+  description: "Rideshare CubeSat stack — cheap science to orbit."
   weightKg: 60
   fuelUnits: 0
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 35
-  costUsd: 750
+  costUsd: 1200000
   modelPrefab: {fileID: 919132149155446097, guid: 9a60fe307eace4e57870cbc33982b66e, type: 3}
   mainTexture: {fileID: 0}

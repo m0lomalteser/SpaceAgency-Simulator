@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: "T3_08_Kryo-Gro\xDFtank_Delta-3000"
   slot: T
-  partName: "Kryo-Gro\xDFtank Delta-3000"
-  description: "Kryo-Gro\xDFtank Delta-3000: Treibstofftank f\xFCr die Hauptstufe. Bildet das R\xFCckgrat jeder Rakete. Fassungsverm\xF6gen: 57960 Einheiten."
+  partName: "Delta Cryo Tank"
+  description: "Large cryogenic tank — Delta Heavy class."
   weightKg: 2782
   fuelUnits: 57960
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 136
-  costUsd: 57960
+  costUsd: 210000000
   modelPrefab: {fileID: 919132149155446097, guid: f39b0c61291a04c19b6a8de2edbbc1ab, type: 3}
   mainTexture: {fileID: 0}

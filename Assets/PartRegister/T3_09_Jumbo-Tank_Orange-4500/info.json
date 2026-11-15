@@ -1,12 +1,12 @@
 {
   "slot": "T",
   "id": "T3_09_Jumbo-Tank_Orange-4500",
-  "partName": "Jumbo-Tank Orange-4500",
+  "partName": "Orange Jumbo Tank",
   "weightKg": 4187.0,
   "fuelUnits": 93050.0,
   "thrustKn": 0.0,
   "efficiencyPercent": 0.0,
   "durabilityHp": 148.0,
-  "costUsd": 102355,
-  "description": "Jumbo-Tank Orange-4500: Treibstofftank für die Hauptstufe. Bildet das Rückgrat jeder Rakete. Fassungsvermögen: 93050 Einheiten."
+  "costUsd": 320000000,
+  "description": "Shuttle External Tank-inspired jumbo tank."
 }

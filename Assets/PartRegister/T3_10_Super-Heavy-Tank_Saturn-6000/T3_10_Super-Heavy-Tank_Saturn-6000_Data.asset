@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: T3_10_Super-Heavy-Tank_Saturn-6000
   slot: T
-  partName: Super-Heavy-Tank Saturn-6000
-  description: "Super-Heavy-Tank Saturn-6000: Treibstofftank f\xFCr die Hauptstufe. Bildet das R\xFCckgrat jeder Rakete. Fassungsverm\xF6gen: 158540 Einheiten."
+  partName: "Saturn Heavy Tank"
+  description: "Saturn V first-stage tank class."
   weightKg: 6658
   fuelUnits: 158540
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 160
-  costUsd: 190248
+  costUsd: 480000000
   modelPrefab: {fileID: 919132149155446097, guid: 30ee73409ccc649669b24136270dd9d2, type: 3}
   mainTexture: {fileID: 0}

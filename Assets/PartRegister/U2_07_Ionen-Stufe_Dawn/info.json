@@ -1,12 +1,12 @@
 {
   "slot": "U",
   "id": "U2_07_Ionen-Stufe_Dawn",
-  "partName": "Ionen-Stufe Dawn",
+  "partName": "Dawn Ion Stage",
   "weightKg": 420.0,
   "fuelUnits": 3680.0,
   "thrustKn": 30.0,
   "efficiencyPercent": 95.0,
   "durabilityHp": 110.0,
-  "costUsd": 30000,
-  "description": "Ionen-Oberstufe mit sehr geringem Schub, aber höchster Effizienz im Spiel."
+  "costUsd": 95000000,
+  "description": "Ion propulsion stage — Dawn mission heritage."
 }

@@ -1,12 +1,12 @@
 {
   "slot": "T",
   "id": "T3_06_Schwerer_Tank_Falcon-1500",
-  "partName": "Schwerer Tank Falcon-1500",
+  "partName": "Falcon-Class Tank",
   "weightKg": 1982.0,
   "fuelUnits": 36050.0,
   "thrustKn": 0.0,
   "efficiencyPercent": 0.0,
   "durabilityHp": 112.0,
-  "costUsd": 30642,
-  "description": "Schwerer Tank Falcon-1500: Treibstofftank für die Hauptstufe. Bildet das Rückgrat jeder Rakete. Fassungsvermögen: 36050 Einheiten."
+  "costUsd": 160000000,
+  "description": "Large core tank in Falcon 9 structural class."
 }

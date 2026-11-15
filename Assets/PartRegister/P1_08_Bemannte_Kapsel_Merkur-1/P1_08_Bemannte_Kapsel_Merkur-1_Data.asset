@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: P1_08_Bemannte_Kapsel_Merkur-1
   slot: P
-  partName: Bemannte Kapsel Merkur-1
-  description: "Bemannte Kapsel Merkur-1: Nutzlast-Spitze f\xFCr Tr\xE4gerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+  partName: "Mercury-1 Capsule"
+  description: "Single-crew capsule inspired by Project Mercury."
   weightKg: 1400
   fuelUnits: 0
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 190
-  costUsd: 55000
+  costUsd: 320000000
   modelPrefab: {fileID: 919132149155446097, guid: 17d0702bf04dd4a86b53e19a6f099b7f, type: 3}
   mainTexture: {fileID: 0}

@@ -1,12 +1,12 @@
 {
   "slot": "P",
   "id": "P1_10_Schwerlast-Verkleidung_XXL",
-  "partName": "Schwerlast-Verkleidung XXL",
+  "partName": "XXL Payload Fairing",
   "weightKg": 3200.0,
   "fuelUnits": 0.0,
   "thrustKn": 0.0,
   "efficiencyPercent": 0.0,
   "durabilityHp": 340.0,
-  "costUsd": 140000,
-  "description": "Schwerlast-Verkleidung XXL: Nutzlast-Spitze für Trägerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+  "costUsd": 45000000,
+  "description": "Heavy fairing for oversized cargo."
 }

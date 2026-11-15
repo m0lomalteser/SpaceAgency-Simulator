@@ -1,12 +1,12 @@
 {
   "slot": "U",
   "id": "U2_03_Vakuum-Stufe_Terrier",
-  "partName": "Vakuum-Stufe Terrier",
+  "partName": "Terrier Vacuum Stage",
   "weightKg": 120.0,
   "fuelUnits": 2870.0,
   "thrustKn": 25.0,
   "efficiencyPercent": 62.0,
   "durabilityHp": 70.0,
-  "costUsd": 2200,
-  "description": "Vakuum-Stufe Terrier: Oberstufe für den Vakuum-Antrieb. Zündet nach der Trennung der Hauptstufe. 25 kN Schub bei 62% Effizienz."
+  "costUsd": 18000000,
+  "description": "Vacuum-optimized small upper stage."
 }

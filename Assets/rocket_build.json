@@ -1,0 +1,62 @@
+{
+    "rocketName": "Rocket_20261114_223320",
+    "savedAt": "2026-11-14 22:33:20",
+    "totalCost": 410000000,
+    "totalWeightKg": 2458.0,
+    "totalFuelUnits": 16620.0,
+    "totalThrustKn": 45.0,
+    "durabilityHp": 346.0,
+    "explosionProbability": 0.5799999833106995,
+    "parts": [
+        {
+            "slot": "P",
+            "id": "P1_08_Bemannte_Kapsel_Merkur-1",
+            "partName": "Mercury-1 Capsule",
+            "costUsd": 320000000,
+            "weightKg": 1400.0,
+            "fuelUnits": 0.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 190.0
+        },
+        {
+            "slot": "U",
+            "id": "U2_04_Präzisions-Stufe_Agena",
+            "partName": "Agena Precision Stage",
+            "costUsd": 35000000,
+            "weightKg": 200.0,
+            "fuelUnits": 4350.0,
+            "thrustKn": 45.0,
+            "durabilityHp": 80.0
+        },
+        {
+            "slot": "T",
+            "id": "T3_03_Standard-Tank_S500",
+            "partName": "Standard Tank S500",
+            "costUsd": 55000000,
+            "weightKg": 858.0,
+            "fuelUnits": 12270.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 76.0
+        },
+        {
+            "slot": "E",
+            "id": "E4_04_Spar-Triebwerk_AeroJet",
+            "partName": "AeroJet Economy Engine",
+            "costUsd": 0,
+            "weightKg": 0.0,
+            "fuelUnits": 0.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 0.0
+        },
+        {
+            "slot": "B",
+            "id": "B5_02_2x_Mini-Feststoffbooster",
+            "partName": "Mini Solid Boosters (x2)",
+            "costUsd": 0,
+            "weightKg": 0.0,
+            "fuelUnits": 0.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 0.0
+        }
+    ]
+}

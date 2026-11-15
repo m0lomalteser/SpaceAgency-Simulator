@@ -1,12 +1,12 @@
 {
   "slot": "E",
   "id": "E4_02_Standard-Triebwerk_Reliant",
-  "partName": "Standard-Triebwerk Reliant",
+  "partName": "Reliant Engine",
   "weightKg": 150.0,
   "fuelUnits": 0.0,
   "thrustKn": 100.0,
   "efficiencyPercent": 58.0,
   "durabilityHp": 55.0,
-  "costUsd": 900,
-  "description": "Standard-Triebwerk Reliant: Haupttriebwerk für den Start. Liefert Schub für die erste Flugphase. 100 kN Schub bei 58% Effizienz."
+  "costUsd": 12000000,
+  "description": "Workhorse single-chamber engine for light LEO vehicles."
 }

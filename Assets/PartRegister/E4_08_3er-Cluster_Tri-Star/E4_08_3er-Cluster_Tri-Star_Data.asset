@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: E4_08_3er-Cluster_Tri-Star
   slot: E
-  partName: 3er-Cluster Tri-Star
-  description: "3er-Cluster Tri-Star: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 1800 kN Schub bei 84% Effizienz."
+  partName: "Tri-Star Engine Cluster"
+  description: "Three-engine cluster for core-stage thrust."
   weightKg: 1650
   fuelUnits: 0
   thrustKn: 1800
   efficiencyPercent: 84
   durabilityHp: 185
-  costUsd: 25000
+  costUsd: 140000000
   modelPrefab: {fileID: 919132149155446097, guid: 1237a99610ce4453ab74a8044b57560e, type: 3}
   mainTexture: {fileID: 0}

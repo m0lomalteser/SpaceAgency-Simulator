@@ -1,12 +1,12 @@
 {
   "slot": "B",
   "id": "B5_10_4x_Ultra-Booster_Ares",
-  "partName": "4x Ultra-Booster Ares",
+  "partName": "Ares Ultra Boosters (x4)",
   "weightKg": 6200.0,
   "fuelUnits": 19000.0,
   "thrustKn": 6800.0,
   "efficiencyPercent": 70.0,
   "durabilityHp": 320.0,
-  "costUsd": 30000,
-  "description": "4x Ultra-Booster Ares: Booster-Paket für zusätzlichen Startschub. Zusatzschub: 6800 kN."
+  "costUsd": 750000000,
+  "description": "SLS/Ares-class ultra solids for deep-space stacks."
 }

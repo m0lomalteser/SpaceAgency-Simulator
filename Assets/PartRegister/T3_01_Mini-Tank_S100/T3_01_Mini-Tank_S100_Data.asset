@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: T3_01_Mini-Tank_S100
   slot: T
-  partName: Mini-Tank S100
-  description: "Mini-Tank S100: Treibstofftank f\xFCr die Hauptstufe. Bildet das R\xFCckgrat jeder Rakete. Fassungsverm\xF6gen: 2400 Einheiten."
+  partName: "Mini Tank S100"
+  description: "Small propellant tank for sounding / light stages."
   weightKg: 192
   fuelUnits: 2400
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 52
-  costUsd: 1440
+  costUsd: 12000000
   modelPrefab: {fileID: 919132149155446097, guid: 23fb3428ccd6149edbfe10e16f463f05, type: 3}
   mainTexture: {fileID: 0}

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: P1_01_Test-Nasenkegel_(Leer)
   slot: P
-  partName: Test-Nasenkegel (Leer)
-  description: "Leerer Nasenkegel ohne Nutzlast \u2013 perfekt f\xFCr erste Testfl\xFCge."
+  partName: "Empty Nose Cone"
+  description: "Mass simulator / empty fairing tip for test flights."
   weightKg: 40
   fuelUnits: 0
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 20
-  costUsd: 0
+  costUsd: 450000
   modelPrefab: {fileID: 919132149155446097, guid: 11ad602aaa7284f5e9a8f2c90086656d, type: 3}
   mainTexture: {fileID: 0}

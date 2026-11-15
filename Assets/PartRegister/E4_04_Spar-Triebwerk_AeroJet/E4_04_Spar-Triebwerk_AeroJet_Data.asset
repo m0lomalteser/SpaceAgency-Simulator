@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: E4_04_Spar-Triebwerk_AeroJet
   slot: E
-  partName: Spar-Triebwerk AeroJet
-  description: "Spar-Triebwerk AeroJet: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 300 kN Schub bei 66% Effizienz."
+  partName: "AeroJet Economy Engine"
+  description: "Efficient mid-tier engine with solid Isp."
   weightKg: 340
   fuelUnits: 0
   thrustKn: 300
   efficiencyPercent: 66
   durabilityHp: 85
-  costUsd: 3200
+  costUsd: 35000000
   modelPrefab: {fileID: 919132149155446097, guid: fe6f32f610f9947c991b7a09835017c2, type: 3}
   mainTexture: {fileID: 0}

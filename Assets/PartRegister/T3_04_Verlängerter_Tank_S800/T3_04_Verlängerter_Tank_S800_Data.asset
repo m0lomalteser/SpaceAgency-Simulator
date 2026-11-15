@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: "T3_04_Verlängerter_Tank_S800"
   slot: T
-  partName: "Verlängerter Tank S800"
-  description: "Verlängerter Tank S800: Treibstofftank f\xFCr die Hauptstufe. Bildet das R\xFCckgrat jeder Rakete. Fassungsverm\xF6gen: 17660 Einheiten."
+  partName: "Extended Tank S800"
+  description: "Stretched tank for longer burns."
   weightKg: 1147
   fuelUnits: 17660
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 88
-  costUsd: 13245
+  costUsd: 85000000
   modelPrefab: {fileID: 919132149155446097, guid: 489e252f4dd4647c8a7218013cc37e56, type: 3}
   mainTexture: {fileID: 0}

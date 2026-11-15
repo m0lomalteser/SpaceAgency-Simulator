@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: P1_07_Tiefraumsonde_Voyager-Pro
   slot: P
-  partName: Tiefraumsonde Voyager-Pro
-  description: "Tiefraumsonde Voyager-Pro: Nutzlast-Spitze f\xFCr Tr\xE4gerraketen. Bringt Fracht oder Besatzung sicher ins Ziel."
+  partName: "Voyager-Pro Probe"
+  description: "Deep-space probe in the Voyager/New Horizons cost class."
   weightKg: 900
   fuelUnits: 0
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 110
-  costUsd: 40000
+  costUsd: 450000000
   modelPrefab: {fileID: 919132149155446097, guid: 69f37cb055ef94529a97e8e648e74882, type: 3}
   mainTexture: {fileID: 0}

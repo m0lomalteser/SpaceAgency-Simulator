@@ -1,12 +1,12 @@
 {
   "slot": "U",
   "id": "U2_04_Präzisions-Stufe_Agena",
-  "partName": "Präzisions-Stufe Agena",
+  "partName": "Agena Precision Stage",
   "weightKg": 200.0,
   "fuelUnits": 4350.0,
   "thrustKn": 45.0,
   "efficiencyPercent": 68.0,
   "durabilityHp": 80.0,
-  "costUsd": 4000,
-  "description": "Präzisions-Stufe Agena: Oberstufe für den Vakuum-Antrieb. Zündet nach der Trennung der Hauptstufe. 45 kN Schub bei 68% Effizienz."
+  "costUsd": 35000000,
+  "description": "Agena-class restartable upper stage."
 }

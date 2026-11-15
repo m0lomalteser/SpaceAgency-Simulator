@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: B5_05_2x_Lange_Booster_Thumper
   slot: B
-  partName: 2x Lange Booster Thumper
-  description: "2x Lange Booster Thumper: Booster-Paket f\xFCr zus\xE4tzlichen Startschub. Zusatzschub: 1300 kN."
+  partName: "Thumper Long Solids (x2)"
+  description: "Long-burn solids inspired by Shuttle SRB geometry."
   weightKg: 1100
   fuelUnits: 3000
   thrustKn: 1300
   efficiencyPercent: 55
   durabilityHp: 120
-  costUsd: 4500
+  costUsd: 95000000
   modelPrefab: {fileID: 919132149155446097, guid: 5c177ab9c6a44467198b09a19675f33b, type: 3}
   mainTexture: {fileID: 0}

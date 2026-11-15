@@ -1,12 +1,12 @@
 {
   "slot": "U",
   "id": "U2_05_Kryo-Stufe_Centaur",
-  "partName": "Kryo-Stufe Centaur",
+  "partName": "Centaur Cryo Stage",
   "weightKg": 380.0,
   "fuelUnits": 8180.0,
   "thrustKn": 80.0,
   "efficiencyPercent": 75.0,
   "durabilityHp": 90.0,
-  "costUsd": 7500,
-  "description": "Kryo-Stufe Centaur: Oberstufe für den Vakuum-Antrieb. Zündet nach der Trennung der Hauptstufe. 80 kN Schub bei 75% Effizienz."
+  "costUsd": 55000000,
+  "description": "NASA Centaur LH2/LOX upper stage (~$30–50M+ class)."
 }

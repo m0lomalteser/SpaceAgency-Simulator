@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: "B5_06_2x_Flüssig-Booster_Light"
   slot: B
-  partName: "2x Flüssig-Booster Light"
-  description: "2x Flüssig-Booster Light: Booster-Paket f\xFCr zus\xE4tzlichen Startschub. Zusatzschub: 1600 kN."
+  partName: "Light Liquid Boosters (x2)"
+  description: "Recoverable-style liquid side boosters."
   weightKg: 1400
   fuelUnits: 4500
   thrustKn: 1600
   efficiencyPercent: 58
   durabilityHp: 150
-  costUsd: 6500
+  costUsd: 140000000
   modelPrefab: {fileID: 919132149155446097, guid: 25e24182116354315bcc21bd453b027d, type: 3}
   mainTexture: {fileID: 0}

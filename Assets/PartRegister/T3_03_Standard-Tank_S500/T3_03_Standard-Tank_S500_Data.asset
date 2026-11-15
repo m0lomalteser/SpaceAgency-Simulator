@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: T3_03_Standard-Tank_S500
   slot: T
-  partName: Standard-Tank S500
-  description: "Standard-Tank S500: Treibstofftank f\xFCr die Hauptstufe. Bildet das R\xFCckgrat jeder Rakete. Fassungsverm\xF6gen: 12270 Einheiten."
+  partName: "Standard Tank S500"
+  description: "Standard core tank — Falcon/Atlas mid-class structure."
   weightKg: 858
   fuelUnits: 12270
   thrustKn: 0
   efficiencyPercent: 0
   durabilityHp: 76
-  costUsd: 8589
+  costUsd: 55000000
   modelPrefab: {fileID: 919132149155446097, guid: 00b6dee9047844ff6878cd14efc939ac, type: 3}
   mainTexture: {fileID: 0}

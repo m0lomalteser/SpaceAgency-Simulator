@@ -1,12 +1,12 @@
 {
   "slot": "U",
   "id": "U2_10_Super-Oberstufe_Titan-X",
-  "partName": "Super-Oberstufe Titan-X",
+  "partName": "Titan-X Super Stage",
   "weightKg": 1600.0,
   "fuelUnits": 37710.0,
   "thrustKn": 520.0,
   "efficiencyPercent": 90.0,
   "durabilityHp": 140.0,
-  "costUsd": 70000,
-  "description": "Super-Oberstufe Titan-X: Oberstufe für den Vakuum-Antrieb. Zündet nach der Trennung der Hauptstufe. 520 kN Schub bei 90% Effizienz."
+  "costUsd": 220000000,
+  "description": "Super-heavy upper for massive payloads."
 }

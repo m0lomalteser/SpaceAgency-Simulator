@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
   id: "E4_05_Doppel-Düse_Gemini-2"
   slot: E
-  partName: "Doppel-Düse Gemini-2"
-  description: "Doppel-Düse Gemini-2: Haupttriebwerk f\xFCr den Start. Liefert Schub f\xFCr die erste Flugphase. 480 kN Schub bei 70% Effizienz."
+  partName: "Gemini Twin Nozzle"
+  description: "Twin-chamber package for redundancy."
   weightKg: 520
   fuelUnits: 0
   thrustKn: 480
   efficiencyPercent: 70
   durabilityHp: 105
-  costUsd: 5500
+  costUsd: 48000000
   modelPrefab: {fileID: 919132149155446097, guid: 3d9bb8cfad0a448dd97a281a827a1aab, type: 3}
   mainTexture: {fileID: 0}

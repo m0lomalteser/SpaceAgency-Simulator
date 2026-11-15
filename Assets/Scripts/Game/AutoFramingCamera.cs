@@ -55,6 +55,14 @@ public class AutoFramingCamera : MonoBehaviour
         }
     }
 
+    public void TriggerTransitionToModelwithUI()
+    {
+        if (targetModel1 != null)
+        {
+            FrameModel(targetModel1, true, transitionDuration, false);
+        }
+    }
+
     public void ResetPosition()
     {
         if (targetModel1 != null)
