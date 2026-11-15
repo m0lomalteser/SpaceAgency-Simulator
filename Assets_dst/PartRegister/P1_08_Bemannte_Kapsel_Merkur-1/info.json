@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_08_Bemannte_Kapsel_Merkur-1",
+  "partName": "Mercury-1 Capsule",
+  "weightKg": 1400.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 190.0,
+  "costUsd": 320000000,
+  "description": "Single-crew capsule inspired by Project Mercury."
+}

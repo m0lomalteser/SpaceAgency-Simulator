@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a84a21dbc5a4693b2f5995007cc4bb, type: 3}
+  m_Name: "U2_04_Pr\xE4zisions-Stufe_Agena_Data"
+  m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
+  id: "U2_04_Präzisions-Stufe_Agena"
+  slot: U
+  partName: "Agena Precision Stage"
+  description: "Agena-class restartable upper stage."
+  weightKg: 200
+  fuelUnits: 4350
+  thrustKn: 45
+  efficiencyPercent: 68
+  durabilityHp: 80
+  costUsd: 35000000
+  modelPrefab: {fileID: 919132149155446097, guid: 16124fcc256f24859a757cd45ae53746, type: 3}
+  mainTexture: {fileID: 0}

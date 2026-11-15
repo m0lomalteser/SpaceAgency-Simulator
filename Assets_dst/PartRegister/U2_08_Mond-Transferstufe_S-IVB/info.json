@@ -1,0 +1,12 @@
+{
+  "slot": "U",
+  "id": "U2_08_Mond-Transferstufe_S-IVB",
+  "partName": "S-IVB Transfer Stage",
+  "weightKg": 900.0,
+  "fuelUnits": 23230.0,
+  "thrustKn": 260.0,
+  "efficiencyPercent": 82.0,
+  "durabilityHp": 120.0,
+  "costUsd": 180000000,
+  "description": "Saturn V S-IVB-class TLI stage."
+}

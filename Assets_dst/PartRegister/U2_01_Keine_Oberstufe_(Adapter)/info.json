@@ -1,0 +1,12 @@
+{
+  "slot": "U",
+  "id": "U2_01_Keine_Oberstufe_(Adapter)",
+  "partName": "Stage Adapter",
+  "weightKg": 120.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 50.0,
+  "costUsd": 2500000,
+  "description": "Interstage adapter only — no upper propulsion."
+}

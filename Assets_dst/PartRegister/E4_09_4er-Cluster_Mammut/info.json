@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_09_4er-Cluster_Mammut",
+  "partName": "Mammoth Quad Cluster",
+  "weightKg": 2500.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 2800.0,
+  "efficiencyPercent": 88.0,
+  "durabilityHp": 225.0,
+  "costUsd": 210000000,
+  "description": "Four-engine cluster for super-heavy cores."
+}

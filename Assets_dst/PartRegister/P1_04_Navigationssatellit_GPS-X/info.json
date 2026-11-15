@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_04_Navigationssatellit_GPS-X",
+  "partName": "GPS-X NavSat",
+  "weightKg": 200.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 75.0,
+  "costUsd": 180000000,
+  "description": "GPS/GNSS navigation satellite bus."
+}

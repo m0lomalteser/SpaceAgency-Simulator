@@ -1,0 +1,12 @@
+{
+  "slot": "T",
+  "id": "T3_08_Kryo-Großtank_Delta-3000",
+  "partName": "Delta Cryo Tank",
+  "weightKg": 2782.0,
+  "fuelUnits": 57960.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 136.0,
+  "costUsd": 210000000,
+  "description": "Large cryogenic tank — Delta Heavy class."
+}

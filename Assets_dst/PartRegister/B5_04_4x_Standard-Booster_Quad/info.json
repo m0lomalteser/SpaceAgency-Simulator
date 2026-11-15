@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_04_4x_Standard-Booster_Quad",
+  "partName": "Quad Solid Boosters (x4)",
+  "weightKg": 700.0,
+  "fuelUnits": 1800.0,
+  "thrustKn": 760.0,
+  "efficiencyPercent": 52.0,
+  "durabilityHp": 100.0,
+  "costUsd": 75000000,
+  "description": "Four solids for heavy lift off the pad."
+}

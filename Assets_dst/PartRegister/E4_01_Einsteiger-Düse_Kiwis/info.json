@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_01_Einsteiger-Düse_Kiwis",
+  "partName": "Starter Nozzle",
+  "weightKg": 90.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 50.0,
+  "efficiencyPercent": 55.0,
+  "durabilityHp": 40.0,
+  "costUsd": 4500000,
+  "description": "Low-cost first engine for suborbital and tech demos."
+}

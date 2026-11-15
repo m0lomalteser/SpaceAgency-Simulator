@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_06_Hochdruck-Triebwerk_Raptor-S",
+  "partName": "High-Pressure Raptor-S",
+  "weightKg": 800.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 750.0,
+  "efficiencyPercent": 74.0,
+  "durabilityHp": 125.0,
+  "costUsd": 65000000,
+  "description": "High-chamber-pressure engine in modern commercial class."
+}

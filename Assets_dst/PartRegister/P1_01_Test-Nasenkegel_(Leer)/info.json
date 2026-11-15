@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_01_Test-Nasenkegel_(Leer)",
+  "partName": "Empty Nose Cone",
+  "weightKg": 40.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 20.0,
+  "costUsd": 450000,
+  "description": "Mass simulator / empty fairing tip for test flights."
+}

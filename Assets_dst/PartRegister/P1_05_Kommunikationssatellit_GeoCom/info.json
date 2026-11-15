@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_05_Kommunikationssatellit_GeoCom",
+  "partName": "GeoCom Relay Satellite",
+  "weightKg": 350.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 100.0,
+  "costUsd": 280000000,
+  "description": "GEO communications satellite."
+}

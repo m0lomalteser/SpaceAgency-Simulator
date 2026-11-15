@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_03_Wettersatellit_Nimbus",
+  "partName": "Nimbus Weather Satellite",
+  "weightKg": 120.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 55.0,
+  "costUsd": 220000000,
+  "description": "NOAA/Nimbus-class Earth observation satellite."
+}

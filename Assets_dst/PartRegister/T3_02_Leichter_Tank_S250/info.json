@@ -1,0 +1,12 @@
+{
+  "slot": "T",
+  "id": "T3_02_Leichter_Tank_S250",
+  "partName": "Light Tank S250",
+  "weightKg": 447.0,
+  "fuelUnits": 5960.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 64.0,
+  "costUsd": 28000000,
+  "description": "Light aluminum tank structure."
+}

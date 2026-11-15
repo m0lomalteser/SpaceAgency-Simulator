@@ -1,0 +1,12 @@
+{
+  "slot": "T",
+  "id": "T3_03_Standard-Tank_S500",
+  "partName": "Standard Tank S500",
+  "weightKg": 858.0,
+  "fuelUnits": 12270.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 76.0,
+  "costUsd": 55000000,
+  "description": "Standard core tank — Falcon/Atlas mid-class structure."
+}

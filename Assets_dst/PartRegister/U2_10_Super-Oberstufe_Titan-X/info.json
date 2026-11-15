@@ -1,0 +1,12 @@
+{
+  "slot": "U",
+  "id": "U2_10_Super-Oberstufe_Titan-X",
+  "partName": "Titan-X Super Stage",
+  "weightKg": 1600.0,
+  "fuelUnits": 37710.0,
+  "thrustKn": 520.0,
+  "efficiencyPercent": 90.0,
+  "durabilityHp": 140.0,
+  "costUsd": 220000000,
+  "description": "Super-heavy upper for massive payloads."
+}

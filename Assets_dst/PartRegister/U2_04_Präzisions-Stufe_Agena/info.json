@@ -1,0 +1,12 @@
+{
+  "slot": "U",
+  "id": "U2_04_Präzisions-Stufe_Agena",
+  "partName": "Agena Precision Stage",
+  "weightKg": 200.0,
+  "fuelUnits": 4350.0,
+  "thrustKn": 45.0,
+  "efficiencyPercent": 68.0,
+  "durabilityHp": 80.0,
+  "costUsd": 35000000,
+  "description": "Agena-class restartable upper stage."
+}

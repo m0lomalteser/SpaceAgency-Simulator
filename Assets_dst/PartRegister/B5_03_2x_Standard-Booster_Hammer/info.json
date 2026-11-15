@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_03_2x_Standard-Booster_Hammer",
+  "partName": "Hammer Solid Boosters (x2)",
+  "weightKg": 450.0,
+  "fuelUnits": 1200.0,
+  "thrustKn": 480.0,
+  "efficiencyPercent": 50.0,
+  "durabilityHp": 80.0,
+  "costUsd": 40000000,
+  "description": "Medium solid motors in the Atlas/Delta strap-on class."
+}

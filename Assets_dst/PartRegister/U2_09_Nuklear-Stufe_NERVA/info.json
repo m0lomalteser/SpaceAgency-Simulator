@@ -1,0 +1,12 @@
+{
+  "slot": "U",
+  "id": "U2_09_Nuklear-Stufe_NERVA",
+  "partName": "NERVA Nuclear Stage",
+  "weightKg": 1100.0,
+  "fuelUnits": 14400.0,
+  "thrustKn": 360.0,
+  "efficiencyPercent": 88.0,
+  "durabilityHp": 130.0,
+  "costUsd": 650000000,
+  "description": "Nuclear thermal stage — NERVA program inspired."
+}

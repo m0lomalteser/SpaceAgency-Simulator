@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_06_Weltraumteleskop_DeepEye",
+  "partName": "DeepEye Space Observatory",
+  "weightKg": 650.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 130.0,
+  "costUsd": 1200000000,
+  "description": "Hubble/JWST-inspired observatory (program costs are billions)."
+}

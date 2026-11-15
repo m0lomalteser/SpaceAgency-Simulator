@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_08_3er-Cluster_Tri-Star",
+  "partName": "Tri-Star Engine Cluster",
+  "weightKg": 1650.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 1800.0,
+  "efficiencyPercent": 84.0,
+  "durabilityHp": 185.0,
+  "costUsd": 140000000,
+  "description": "Three-engine cluster for core-stage thrust."
+}

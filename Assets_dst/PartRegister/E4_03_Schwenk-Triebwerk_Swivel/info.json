@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_03_Schwenk-Triebwerk_Swivel",
+  "partName": "Swivel Gimbal Engine",
+  "weightKg": 230.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 180.0,
+  "efficiencyPercent": 62.0,
+  "durabilityHp": 70.0,
+  "costUsd": 22000000,
+  "description": "Gimbaled engine for steering during ascent."
+}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a84a21dbc5a4693b2f5995007cc4bb, type: 3}
+  m_Name: P1_03_Wettersatellit_Nimbus_Data
+  m_EditorClassIdentifier: Assembly-CSharp::RocketPartData
+  id: P1_03_Wettersatellit_Nimbus
+  slot: P
+  partName: "Nimbus Weather Satellite"
+  description: "NOAA/Nimbus-class Earth observation satellite."
+  weightKg: 120
+  fuelUnits: 0
+  thrustKn: 0
+  efficiencyPercent: 0
+  durabilityHp: 55
+  costUsd: 220000000
+  modelPrefab: {fileID: 919132149155446097, guid: 168474b5b80d64252bc540316e143ecf, type: 3}
+  mainTexture: {fileID: 0}

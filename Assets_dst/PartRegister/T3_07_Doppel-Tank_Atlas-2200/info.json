@@ -1,0 +1,12 @@
+{
+  "slot": "T",
+  "id": "T3_07_Doppel-Tank_Atlas-2200",
+  "partName": "Atlas Dual Tank",
+  "weightKg": 790.0,
+  "fuelUnits": 15800.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 124.0,
+  "costUsd": 95000000,
+  "description": "Dual-tank Atlas-style arrangement."
+}

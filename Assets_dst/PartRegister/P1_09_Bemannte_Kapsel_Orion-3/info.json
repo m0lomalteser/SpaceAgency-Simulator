@@ -1,0 +1,12 @@
+{
+  "slot": "P",
+  "id": "P1_09_Bemannte_Kapsel_Orion-3",
+  "partName": "Orion Crew Capsule",
+  "weightKg": 2100.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 0.0,
+  "efficiencyPercent": 0.0,
+  "durabilityHp": 260.0,
+  "costUsd": 900000000,
+  "description": "NASA Orion-class crew vehicle (~$0.9B production class)."
+}

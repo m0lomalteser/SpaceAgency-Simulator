@@ -1,0 +1,12 @@
+{
+  "slot": "E",
+  "id": "E4_05_Doppel-Düse_Gemini-2",
+  "partName": "Gemini Twin Nozzle",
+  "weightKg": 520.0,
+  "fuelUnits": 0.0,
+  "thrustKn": 480.0,
+  "efficiencyPercent": 70.0,
+  "durabilityHp": 105.0,
+  "costUsd": 48000000,
+  "description": "Twin-chamber package for redundancy."
+}

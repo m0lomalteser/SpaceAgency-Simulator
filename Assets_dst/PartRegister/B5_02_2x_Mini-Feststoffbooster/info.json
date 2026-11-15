@@ -1,0 +1,12 @@
+{
+  "slot": "B",
+  "id": "B5_02_2x_Mini-Feststoffbooster",
+  "partName": "Mini Solid Boosters (x2)",
+  "weightKg": 250.0,
+  "fuelUnits": 600.0,
+  "thrustKn": 240.0,
+  "efficiencyPercent": 48.0,
+  "durabilityHp": 60.0,
+  "costUsd": 18000000,
+  "description": "GEM-class solid strap-ons for early LEO margin."
+}
