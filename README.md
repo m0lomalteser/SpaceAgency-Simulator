@@ -8,10 +8,6 @@ Build rockets, manage your agency, launch missions, and keep the budget alive. A
 > **AI disclosure:** Approximately **60% of all coding work** in this project was done with AI assistance.
 > AI was used for implementation, refactoring, debugging, and technical documentation. The remaining **~40%** was written and reviewed by humans. Game design, art direction, and final review remain human-owned.
 
-| Coding contribution | Share |
-| --- | --- |
-| AI-assisted coding | **~60%** |
-| Human coding & review | **~40%** |
 
 ## Features
 
@@ -32,7 +28,6 @@ Build rockets, manage your agency, launch missions, and keep the budget alive. A
 | Mouse | Interact with UI and build rockets |
 | `F1` | Open/close the NASA briefing |
 | `Esc` | Pause/resume, or close the NASA briefing |
-| `Enter` / `Space` | Advance tutorial steps |
 
 ## Tech stack
 
@@ -40,7 +35,7 @@ Build rockets, manage your agency, launch missions, and keep the budget alive. A
 - **TextMeshPro** for UI text
 - **Unity Input System**
 - **C#** gameplay, economy, save, and UI systems
-- **NASA APIs** — APOD, EPIC, and NeoWs
+- **NASA API** — EPIC
 - **WebGL** deployment (Vercel + custom domain)
 
 ## Run locally
@@ -52,26 +47,10 @@ Build rockets, manage your agency, launch missions, and keep the budget alive. A
 
 The live browser build is available at [www.spaceagency.earth](https://www.spaceagency.earth).
 
-## Project structure
-
-```
-Assets/
-├── Scripts/
-│   ├── Economy/   # money, mood, grants, upgrades, game time
-│   ├── NASA/      # APOD/EPIC/NeoWs client and briefing overlay
-│   ├── UI/        # tutorial, pause, settings, runtime UI factory
-│   └── ...        # rocket builder, missions, save system
-├── Scenes/        # menu, game, rocket builder, overlays
-├── Prefabs/       # rockets, parts, UI
-└── Fonts/         # custom TMP font
-```
-
 ## AI usage
 
 This repository is intentionally transparent about AI involvement:
 
 - **~60% of all coding work was AI-assisted.**
 - AI contributed to gameplay systems, UI overlays, NASA API integration, refactoring, debugging, and documentation.
-- **~40% was human-written and human-reviewed**, including design decisions, art, balancing, testing, and final integration.
-
-If you are evaluating the project, please treat the AI-assisted portion accordingly and review the code before production use.
+- **~40% was human-written and human-reviewed**, including design, art, balancing, testing, and final integration.
