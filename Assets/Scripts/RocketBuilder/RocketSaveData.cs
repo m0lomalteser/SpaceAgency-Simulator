@@ -12,6 +12,13 @@ public class RocketSaveData
     public float totalThrustKn;
     public float durabilityHp;
     public float explosionProbability;
+
+    /// <summary>
+    /// Wie oft diese Rakete noch gestartet werden darf (Reusable-Rockets-Upgrade).
+    /// 0 = keine Wiederverwendung, Datei wird nach dem Start gelöscht.
+    /// </summary>
+    public int reuseUsesRemaining;
+
     public List<SavedPartData> parts = new List<SavedPartData>();
 }
 

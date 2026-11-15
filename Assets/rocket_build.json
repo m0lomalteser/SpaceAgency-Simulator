@@ -1,62 +1,63 @@
 {
-    "rocketName": "Rocket_20261115_090827",
-    "savedAt": "2026-11-15 09:08:27",
-    "totalCost": 1542000000,
-    "totalWeightKg": 3847.0,
-    "totalFuelUnits": 25840.0,
-    "totalThrustKn": 1810.0,
-    "durabilityHp": 548.0,
-    "explosionProbability": 0.1899999976158142,
+    "rocketName": "Rocket_20261115_170653",
+    "savedAt": "2026-11-15 17:06:53",
+    "totalCost": 13130000,
+    "totalWeightKg": 462.0,
+    "totalFuelUnits": 2400.0,
+    "totalThrustKn": 50.0,
+    "durabilityHp": 177.0,
+    "explosionProbability": 0.7149999737739563,
+    "reuseUsesRemaining": 1,
     "parts": [
         {
             "slot": "P",
-            "id": "P1_06_Weltraumteleskop_DeepEye",
-            "partName": "DeepEye Space Observatory",
-            "costUsd": 1200000000,
-            "weightKg": 650.0,
+            "id": "P1_02_CubeSat-Spitze_Mini",
+            "partName": "CubeSat Deployer",
+            "costUsd": 780000,
+            "weightKg": 60.0,
             "fuelUnits": 0.0,
             "thrustKn": 0.0,
-            "durabilityHp": 130.0
+            "durabilityHp": 35.0
         },
         {
             "slot": "U",
-            "id": "U2_07_Ionen-Stufe_Dawn",
-            "partName": "Dawn Ion Stage",
-            "costUsd": 95000000,
-            "weightKg": 420.0,
-            "fuelUnits": 3680.0,
-            "thrustKn": 30.0,
-            "durabilityHp": 110.0
+            "id": "U2_01_Keine_Oberstufe_(Adapter)",
+            "partName": "Stage Adapter",
+            "costUsd": 1625000,
+            "weightKg": 120.0,
+            "fuelUnits": 0.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 50.0
         },
         {
             "slot": "T",
-            "id": "T3_04_Verlängerter_Tank_S800",
-            "partName": "Extended Tank S800",
-            "costUsd": 85000000,
-            "weightKg": 1147.0,
-            "fuelUnits": 17660.0,
+            "id": "T3_01_Mini-Tank_S100",
+            "partName": "Mini Tank S100",
+            "costUsd": 7800000,
+            "weightKg": 192.0,
+            "fuelUnits": 2400.0,
             "thrustKn": 0.0,
-            "durabilityHp": 88.0
+            "durabilityHp": 52.0
         },
         {
             "slot": "E",
-            "id": "E4_03_Schwenk-Triebwerk_Swivel",
-            "partName": "Swivel Gimbal Engine",
-            "costUsd": 22000000,
-            "weightKg": 230.0,
+            "id": "E4_01_Einsteiger-Düse_Kiwis",
+            "partName": "Starter Nozzle",
+            "costUsd": 2925000,
+            "weightKg": 90.0,
             "fuelUnits": 0.0,
-            "thrustKn": 180.0,
-            "durabilityHp": 70.0
+            "thrustKn": 50.0,
+            "durabilityHp": 40.0
         },
         {
             "slot": "B",
-            "id": "B5_06_2x_Flüssig-Booster_Light",
-            "partName": "Light Liquid Boosters (x2)",
-            "costUsd": 140000000,
-            "weightKg": 1400.0,
-            "fuelUnits": 4500.0,
-            "thrustKn": 1600.0,
-            "durabilityHp": 150.0
+            "id": "B5_01_Keine_Booster",
+            "partName": "No Boosters",
+            "costUsd": 0,
+            "weightKg": 0.0,
+            "fuelUnits": 0.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 0.0
         }
     ]
 }

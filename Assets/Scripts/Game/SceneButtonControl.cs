@@ -6,7 +6,7 @@ public class SceneButtonControl : MonoBehaviour
     public void ShowMissionWindows()
     {
         Debug.Log("[SceneButton] Button geklickt! Starte 3 Sekunden Timer...");
-        StartCoroutine(ShowMissionWindowsDelayed(1.5f));
+        StartCoroutine(ShowMissionWindowsDelayed(2f));
     }
 
     private IEnumerator ShowMissionWindowsDelayed(float delaySeconds)

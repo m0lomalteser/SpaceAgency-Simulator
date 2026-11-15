@@ -2614,9 +2614,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755197045}
-  - component: {fileID: 1755197044}
   - component: {fileID: 1755197047}
   - component: {fileID: 1755197046}
+  - component: {fileID: 1755197048}
   m_Layer: 0
   m_Name: AgencyCreationUI
   m_TagString: Untagged
@@ -2624,37 +2624,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1755197044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755197043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b774629f00c4adb92f58faafd6e988, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AgencyCreationUI
-  agencyNameInput: {fileID: 400213905}
-  createButton: {fileID: 139387363}
-  penButton: {fileID: 1363641352}
-  eraserButton: {fileID: 1615910050}
-  colorButtons:
-  - {fileID: 1020409666}
-  - {fileID: 257835451}
-  - {fileID: 1649712707}
-  - {fileID: 71806911}
-  - {fileID: 2071533788}
-  colors:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 1, b: 0, a: 1}
-  - {r: 0, g: 0, b: 1, a: 1}
-  - {r: 1, g: 0, b: 1, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  textureSize: 512
-  backgroundColor: {r: 0.8274511, g: 0.8274511, b: 0.8274511, a: 1}
-  brushSize: 8
 --- !u!224 &1755197045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2709,6 +2678,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755197043}
   m_CullTransparentMesh: 1
+--- !u!114 &1755197048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755197043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1891b320fec481c9d9ac11054d4c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnterpriseCustomizerController
+  titleFieldReference: {fileID: 400213905}
+  commitButtonReference: {fileID: 139387363}
+  pencilToolButton: {fileID: 1363641352}
+  eraserToolButton: {fileID: 1615910050}
+  swatchButtonArray:
+  - {fileID: 1020409666}
+  - {fileID: 2071533788}
+  - {fileID: 71806911}
+  - {fileID: 1649712707}
+  - {fileID: 257835451}
+  swatchColorPalette:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  resolutionDimension: 512
+  canvasBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  activeBrushThickness: 8
 --- !u!1 &1915859346
 GameObject:
   m_ObjectHideFlags: 0

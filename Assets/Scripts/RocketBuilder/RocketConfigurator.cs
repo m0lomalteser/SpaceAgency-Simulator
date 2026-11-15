@@ -6,6 +6,57 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
+[System.Serializable]
+public class AgencySaveData
+{
+    public int version;
+    public string agencyName;
+    public string logoPng;
+    public long money;
+    public float mood;
+    public int day;
+    public int month;
+    public int year;
+    public float timeOfDay;
+    public int tutorialStep;
+    public bool tutorialDone;
+    public int totalLaunches;
+    public int satelliteLaunches;
+    public int satelliteSuccesses;
+    public int satelliteFailures;
+    public int moonLaunches;
+    public int moonSuccesses;
+    public int moonFailures;
+    public int marsLaunches;
+    public int marsSuccesses;
+    public int marsFailures;
+    public int consecutiveFailures;
+    public int[] upgrades;
+    public long lifetimeBudget;
+    public long lifetimeSpent;
+    public long lastBudget;
+    public int pendingMission;
+    public long pendingLaunchCost;
+    public int lastResultMission;
+    public int lastResultSuccess;
+    public string lastResultText;
+
+    // Wirtschaft / Regierungsgeld
+    public long regierungsgeld;
+    public long lastGovernmentGrant;
+    public float lastGovernmentGrantMood;
+    public string lastGovernmentGrantDate;
+    public string lastAdvertisementPayoutDate;
+    public string lastAdvertisementMoodDate;
+    public int mannedMissionLaunches;
+    public int mannedMissionSuccesses;
+    public int mannedMissionFailures;
+    public long mannedMissionCompensationPaid;
+
+    public string createdAt;
+    public string updatedAt;
+}
+
 public class RocketConfigurator : MonoBehaviour
 {
     public PartRegistry registry;
@@ -26,12 +77,19 @@ public class RocketConfigurator : MonoBehaviour
     public Camera targetCamera;
     public float cameraBaseDistance = 14f;
 
+    [Header("Economy")]
+    [Tooltip("Wendet den Cheaper-Parts-Rabatt aus der AgencyEconomy an.")]
+    public bool applyEconomyDiscounts = true;
+
     private readonly string[] slotKeys = new string[] { "P", "U", "T", "E", "B" };
     private readonly string[] slotNames = new string[] { "Payload", "Upper Stage", "Main Tank", "Main Engine", "Boosters" };
 
     private List<RocketPartData>[] slotParts;
     private int[] selectedIndices;
     private List<GameObject> spawnedParts = new List<GameObject>();
+
+    // Pfad zur space_agency_save.json im Persistent Data Path (AppStorage)
+    private string AgencySavePath => Path.Combine(Application.persistentDataPath, "space_agency_save.json");
 
     private void Awake()
     {
@@ -50,6 +108,59 @@ public class RocketConfigurator : MonoBehaviour
         BindUI();
         RebuildRocket();
         UpdateUI();
+    }
+
+    private AgencySaveData LoadAgencyData()
+    {
+        try
+        {
+            if (File.Exists(AgencySavePath))
+            {
+                string json = File.ReadAllText(AgencySavePath);
+                return JsonUtility.FromJson<AgencySaveData>(json);
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("Failed to load agency save: " + e.Message);
+        }
+        return null;
+    }
+
+    private void SaveAgencyData(AgencySaveData data)
+    {
+        try
+        {
+            string json = JsonUtility.ToJson(data, true);
+            File.WriteAllText(AgencySavePath, json);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to save agency data: " + e.Message);
+        }
+    }
+
+    /// <label>Prüft, ob die aktuell ausgewählten Teile exakt der letzten gespeicherten Rakete entsprechen</label>
+    private bool IsCurrentRocketIdenticalToSaved()
+    {
+        RocketSaveData save = RocketAssembly.LoadSave();
+        if (save == null || save.parts == null) return false;
+
+        for (int i = 0; i < slotKeys.Length; i++)
+        {
+            RocketPartData currentPart = GetCurrentPart(i);
+            string currentId = currentPart != null ? currentPart.id : string.Empty;
+            string currentSlot = slotKeys[i];
+
+            SavedPartData savedPart = save.parts.Find(p => p != null && p.slot == currentSlot);
+            string savedId = savedPart != null ? savedPart.id : string.Empty;
+
+            if (currentId != savedId)
+            {
+                return false; // Es gibt mindestens einen Unterschied
+            }
+        }
+        return true; // 1:1 identisch mit der gespeicherten Rakete
     }
 
     private void InitializeSlots()
@@ -169,6 +280,22 @@ public class RocketConfigurator : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Tatsächlicher Preis eines Teils inklusive Cheaper-Parts-Rabatt.
+    /// </summary>
+    public long GetEffectivePartCost(RocketPartData part)
+    {
+        if (part == null)
+            return 0;
+
+        if (!applyEconomyDiscounts)
+            return part.costUsd;
+
+        AgencyEconomyManager economy = AgencyEconomyManager.ExistingInstance;
+
+        return economy != null ? economy.GetPartCost(part.costUsd) : part.costUsd;
+    }
+
     public void UpdateUI()
     {
         int totalCost = 0;
@@ -187,7 +314,7 @@ public class RocketConfigurator : MonoBehaviour
 
             if (part != null)
             {
-                totalCost += part.costUsd;
+                totalCost += (int)GetEffectivePartCost(part);
                 totalWeight += part.weightKg;
                 totalFuel += part.fuelUnits;
                 totalThrust += part.thrustKn;
@@ -205,11 +332,66 @@ public class RocketConfigurator : MonoBehaviour
             totalThrustText.text = $"{totalThrust:N0} kN";
         if (totalDurabilityText != null)
             totalDurabilityText.text = $"{totalDurability:N0} HP";
+
+        // Budget- und Identik-Prüfung für den Save-Button
+        bool isIdentical = IsCurrentRocketIdenticalToSaved();
+        AgencySaveData agencyData = LoadAgencyData();
+        long availableMoney = agencyData != null ? agencyData.money : 0;
+
+        // Button ist aktiv, wenn sie 1:1 identisch ist ODER genug Budget vorhanden ist
+        bool canSave = isIdentical || (availableMoney >= totalCost);
+
+        if (saveButton != null)
+        {
+            saveButton.interactable = canSave;
+        }
+
+        if (saveNotificationText != null)
+        {
+            if (!isIdentical && !canSave)
+                saveNotificationText.text = "Insufficient Budget!";
+            else if (isIdentical)
+                saveNotificationText.text = "";
+            else
+                saveNotificationText.text = "";
+        }
     }
 
     public void SaveRocket()
     {
+        bool isIdentical = IsCurrentRocketIdenticalToSaved();
         int totalCost = 0;
+        int baseTotalCost = 0;
+
+        for (int i = 0; i < slotKeys.Length; i++)
+        {
+            RocketPartData part = GetCurrentPart(i);
+            if (part == null)
+                continue;
+
+            totalCost += (int)GetEffectivePartCost(part);
+            baseTotalCost += part.costUsd;
+        }
+
+        // 1. Budget nur prüfen und abziehen, wenn sich etwas geändert hat (nicht 1:1 identisch)
+        AgencySaveData agencyData = LoadAgencyData();
+        if (agencyData != null && !isIdentical)
+        {
+            if (agencyData.money < totalCost)
+            {
+                if (saveNotificationText != null)
+                    saveNotificationText.text = "Error: Insufficient Budget!";
+                return;
+            }
+
+            // Geld abziehen & Aktualisierungszeit setzen
+            agencyData.money -= totalCost;
+            agencyData.lifetimeSpent += totalCost;
+            agencyData.updatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            SaveAgencyData(agencyData);
+        }
+
+        // 2. Raketendaten zusammenstellen & speichern
         float totalWeight = 0f;
         float totalFuel = 0f;
         float totalThrust = 0f;
@@ -224,7 +406,6 @@ public class RocketConfigurator : MonoBehaviour
             RocketPartData part = GetCurrentPart(i);
             if (part != null)
             {
-                totalCost += part.costUsd;
                 totalWeight += part.weightKg;
                 totalFuel += part.fuelUnits;
                 totalThrust += part.thrustKn;
@@ -235,7 +416,7 @@ public class RocketConfigurator : MonoBehaviour
                     slot = part.slot,
                     id = part.id,
                     partName = part.partName,
-                    costUsd = part.costUsd,
+                    costUsd = (int)GetEffectivePartCost(part),
                     weightKg = part.weightKg,
                     fuelUnits = part.fuelUnits,
                     thrustKn = part.thrustKn,
@@ -250,8 +431,13 @@ public class RocketConfigurator : MonoBehaviour
         data.totalThrustKn = totalThrust;
         data.durabilityHp = totalDurability;
 
-        float factor = Mathf.Clamp01((totalCost - 5_000_000f) / 2_000_000_000f);
+        // Explosionsrisiko hängt vom Grundpreis ab, damit der Cheaper-Parts-Rabatt
+        // die Rakete nicht künstlich unsicherer macht.
+        float factor = Mathf.Clamp01((baseTotalCost - 5_000_000f) / 2_000_000_000f);
         data.explosionProbability = Mathf.Round(Mathf.Lerp(0.72f, 0.03f, factor) * 1000f) / 1000f;
+
+        AgencyEconomyManager economy = AgencyEconomyManager.ExistingInstance;
+        data.reuseUsesRemaining = economy != null ? economy.RocketReuseCount : 0;
 
         string payload = JsonUtility.ToJson(data, true);
         File.WriteAllText(RocketAssembly.SavePath, payload);
@@ -264,8 +450,10 @@ public class RocketConfigurator : MonoBehaviour
 
         if (saveNotificationText != null)
         {
-            saveNotificationText.text = "Rocket saved";
+            saveNotificationText.text = isIdentical ? "Saved" : "Rocket built and Budget updated!";
         }
+
+        UpdateUI();
     }
 
     private void OnBackClicked()

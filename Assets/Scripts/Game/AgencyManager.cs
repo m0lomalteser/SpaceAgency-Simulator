@@ -19,8 +19,8 @@ public class SpaceAgencySaveData
     public string agencyName = "";
     public string logoPng = "";
 
-    public long money = 0;
-    public float mood = 50f;
+    public long money = 30000000;
+    public float mood = 40f;
 
     public int day = 1;
     public int month = 1;
@@ -60,6 +60,27 @@ public class SpaceAgencySaveData
     public int lastResultSuccess = -1;
 
     public string lastResultText = "";
+
+    // ==========================================
+    // ECONOMY / GOVERNMENT GRANT
+    // ==========================================
+
+    // Kumuliertes Geld, das über das tägliche Regierungsgeld kam.
+    public long regierungsgeld = 0;
+
+    public long lastGovernmentGrant = 0;
+    public float lastGovernmentGrantMood = 0f;
+    public string lastGovernmentGrantDate = "";
+
+    // Advertisement-Effekte
+    public string lastAdvertisementPayoutDate = "";
+    public string lastAdvertisementMoodDate = "";
+
+    // Bemannte Missionen
+    public int mannedMissionLaunches = 0;
+    public int mannedMissionSuccesses = 0;
+    public int mannedMissionFailures = 0;
+    public long mannedMissionCompensationPaid = 0;
 
     public string createdAt = "";
     public string updatedAt = "";
@@ -442,8 +463,8 @@ public class AgencyManager : MonoBehaviour,
         data.agencyName = "";
         data.logoPng = "";
 
-        data.money = 0;
-        data.mood = 50f;
+        data.money = 30000000;
+        data.mood = 40f;
 
         data.day = 1;
         data.month = 1;
@@ -497,6 +518,15 @@ public class AgencyManager : MonoBehaviour,
 
         if (data.logoPng == null)
             data.logoPng = "";
+
+        if (data.lastGovernmentGrantDate == null)
+            data.lastGovernmentGrantDate = "";
+
+        if (data.lastAdvertisementPayoutDate == null)
+            data.lastAdvertisementPayoutDate = "";
+
+        if (data.lastAdvertisementMoodDate == null)
+            data.lastAdvertisementMoodDate = "";
 
         if (string.IsNullOrEmpty(data.createdAt))
             data.createdAt = GetCurrentTimestamp();

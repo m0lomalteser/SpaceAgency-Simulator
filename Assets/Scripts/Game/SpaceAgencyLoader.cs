@@ -17,6 +17,9 @@ public class SpaceAgencyLoader : MonoBehaviour
     [Tooltip("Name der Speicherdatei (z.B. save.json oder wie sie bei dir heißt)")]
     [SerializeField] private string fileName = "space_agency_save.json"; // Bitte anpassen, falls die Datei anders heißt!
 
+    // Öffentliche Variable, damit andere Skripte das Geld abrufen können
+    public long CurrentMoney { get; private set; }
+
     [Serializable]
     public class GameData
     {
@@ -36,19 +39,12 @@ public class SpaceAgencyLoader : MonoBehaviour
     public void LoadAndApplyData()
     {
         // Pfad zusammenbauen
-        // Auf macOS entspricht Application.persistentDataPath meist:
-        // /Users/<username>/Library/Application Support/<CompanyName>/<ProductName>
         string folderPath = Path.Combine(Application.persistentDataPath, "../DefaultCompany/SpaceAgency-Simulator");
-        
-        // Alternativ, falls es im Standard-persistentDataPath liegt (je nach Company/Product Name in Unity):
-        // string folderPath = Application.persistentDataPath;
-        
         string fullPath = Path.Combine(folderPath, fileName);
 
         if (!File.Exists(fullPath))
         {
             Debug.LogWarning($"[SpaceAgencyLoader] Datei nicht gefunden unter: {fullPath}");
-            // Fallback: Versuche direkt im persistentDataPath zu suchen
             fullPath = Path.Combine(Application.persistentDataPath, fileName);
             if (!File.Exists(fullPath))
             {
@@ -62,6 +58,12 @@ public class SpaceAgencyLoader : MonoBehaviour
             string jsonContent = File.ReadAllText(fullPath);
             GameData data = JsonUtility.FromJson<GameData>(jsonContent);
 
+            // Geld zwischenspeichern
+            if (data != null)
+            {
+                CurrentMoney = data.money;
+            }
+
             // 1. Agency Name in Text setzen
             if (agencyNameText != null && data != null)
             {
@@ -73,7 +75,6 @@ public class SpaceAgencyLoader : MonoBehaviour
             {
                 byte[] imageBytes = Convert.FromBase64String(data.logoPng);
                 
-                // Texture2D erstellen (Größe wird beim Laden von PNGs automatisch überschrieben)
                 Texture2D tex = new Texture2D(2, 2);
                 if (tex.LoadImage(imageBytes))
                 {
