@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RocketBuilderForMission.unity
     guid: 5eccd1b689bb540b0bd1bfaefb5d652c
+  - enabled: 1
+    path: Assets/Scenes/PauseMenu.unity
+    guid: 8bab97b342fb43c695e9708c360bf385
+  - enabled: 1
+    path: Assets/Scenes/TutorialOverlay.unity
+    guid: 93c9308fcf93449a9d1348486bea37e0
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

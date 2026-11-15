@@ -1,12 +1,12 @@
 {
-    "rocketName": "Rocket_20261115_170653",
-    "savedAt": "2026-11-15 17:06:53",
-    "totalCost": 13130000,
+    "rocketName": "Rocket_20261115_173137",
+    "savedAt": "2026-11-15 17:31:37",
+    "totalCost": 23205000,
     "totalWeightKg": 462.0,
-    "totalFuelUnits": 2400.0,
-    "totalThrustKn": 50.0,
-    "durabilityHp": 177.0,
-    "explosionProbability": 0.7149999737739563,
+    "totalFuelUnits": 5270.0,
+    "totalThrustKn": 75.0,
+    "durabilityHp": 197.0,
+    "explosionProbability": 0.7089999914169312,
     "reuseUsesRemaining": 1,
     "parts": [
         {
@@ -21,13 +21,13 @@
         },
         {
             "slot": "U",
-            "id": "U2_01_Keine_Oberstufe_(Adapter)",
-            "partName": "Stage Adapter",
-            "costUsd": 1625000,
+            "id": "U2_03_Vakuum-Stufe_Terrier",
+            "partName": "Terrier Vacuum Stage",
+            "costUsd": 11700000,
             "weightKg": 120.0,
-            "fuelUnits": 0.0,
-            "thrustKn": 0.0,
-            "durabilityHp": 50.0
+            "fuelUnits": 2870.0,
+            "thrustKn": 25.0,
+            "durabilityHp": 70.0
         },
         {
             "slot": "T",

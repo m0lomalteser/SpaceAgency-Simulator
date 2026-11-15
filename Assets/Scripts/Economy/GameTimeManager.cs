@@ -109,16 +109,48 @@ public class GameTimeManager : MonoBehaviour
     {
         if (existingInstance != null && existingInstance != this)
         {
+            // Neue Szene geladen: vorhandene, persistente Uhr übernimmt die
+            // frischen Text-Referenzen und läuft nahtlos weiter.
+            existingInstance.AdoptSceneBindings(this);
+
             Destroy(gameObject);
             return;
         }
 
         existingInstance = this;
 
-        if (persistAcrossScenes && transform.parent == null)
+        // Immer persistent machen und aus einem Elternobjekt lösen,
+        // damit die Zeit über Szenenwechsel hinweg erhalten bleibt.
+        if (persistAcrossScenes)
+        {
+            if (transform.parent != null)
+                transform.SetParent(null, true);
+
             DontDestroyOnLoad(gameObject);
+        }
 
         InitializeClock();
+    }
+
+    /// <summary>
+    /// Übernimmt Zeit- und Datumsanzeige aus einer neu geladenen Szene,
+    /// ohne die laufende Spielzeit zurückzusetzen.
+    /// </summary>
+    private void AdoptSceneBindings(GameTimeManager sceneInstance)
+    {
+        if (sceneInstance == null)
+            return;
+
+        if (sceneInstance.timeText != null)
+            timeText = sceneInstance.timeText;
+
+        if (sceneInstance.dateText != null)
+            dateText = sceneInstance.dateText;
+
+        if (syncGameTimeToSave && !useSystemTime)
+            SaveClockToJson();
+
+        UpdateText(true);
     }
 
     private void Update()
@@ -179,6 +211,12 @@ public class GameTimeManager : MonoBehaviour
     private void OnApplicationPause(bool paused)
     {
         if (paused)
+            SaveClockToJson();
+    }
+
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        if (!hasFocus)
             SaveClockToJson();
     }
 
