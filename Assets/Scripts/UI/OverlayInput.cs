@@ -22,6 +22,19 @@ public static class OverlayInput
         }
     }
 
+    /// <summary>F1 - öffnet/schließt das NASA-Briefing.</summary>
+    public static bool NasaPressed
+    {
+        get
+        {
+#if ENABLE_INPUT_SYSTEM
+            if (Keyboard.current != null)
+                return Keyboard.current.f1Key.wasPressedThisFrame;
+#endif
+            return Input.GetKeyDown(KeyCode.F1);
+        }
+    }
+
     public static bool SubmitPressed
     {
         get

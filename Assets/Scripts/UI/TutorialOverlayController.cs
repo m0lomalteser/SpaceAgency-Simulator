@@ -227,7 +227,7 @@ public class TutorialOverlayController : MonoBehaviour
             "StepLabel",
             "STEP 1 / 1",
             20f,
-            accentColor,
+            Color.white,
             TextAlignmentOptions.Left,
             fontAsset
         );
@@ -245,7 +245,7 @@ public class TutorialOverlayController : MonoBehaviour
             "Title",
             "TITLE",
             36f,
-            RuntimeUIFactory.TextColor,
+            Color.white,
             TextAlignmentOptions.Left,
             fontAsset
         );
@@ -265,7 +265,7 @@ public class TutorialOverlayController : MonoBehaviour
             "Body",
             "Body",
             22f,
-            RuntimeUIFactory.TextMuted,
+            Color.white,
             TextAlignmentOptions.TopLeft,
             fontAsset
         );

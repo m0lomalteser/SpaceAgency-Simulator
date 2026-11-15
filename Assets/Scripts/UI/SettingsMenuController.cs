@@ -194,7 +194,7 @@ public class SettingsMenuController : MonoBehaviour
             "Title",
             "SETTINGS",
             58f,
-            RuntimeUIFactory.Accent,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -214,7 +214,7 @@ public class SettingsMenuController : MonoBehaviour
             "Subtitle",
             "Audio, display and tutorial options.",
             22f,
-            RuntimeUIFactory.TextMuted,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -280,7 +280,7 @@ public class SettingsMenuController : MonoBehaviour
             "Feedback",
             "",
             17f,
-            RuntimeUIFactory.TextMuted,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -312,7 +312,7 @@ public class SettingsMenuController : MonoBehaviour
             "Hint",
             "Settings are saved automatically.",
             17f,
-            RuntimeUIFactory.TextMuted,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -353,7 +353,7 @@ public class SettingsMenuController : MonoBehaviour
             "Label",
             label,
             24f,
-            RuntimeUIFactory.TextColor,
+            Color.white,
             TextAlignmentOptions.Left,
             fontAsset
         );
@@ -397,7 +397,7 @@ public class SettingsMenuController : MonoBehaviour
             "VolumeValue",
             Mathf.RoundToInt(volume * 100f) + "%",
             22f,
-            RuntimeUIFactory.Accent,
+            Color.white,
             TextAlignmentOptions.Right,
             fontAsset
         );
@@ -466,7 +466,7 @@ public class SettingsMenuController : MonoBehaviour
             "QualityValue",
             "-",
             21f,
-            RuntimeUIFactory.Accent,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -508,7 +508,7 @@ public class SettingsMenuController : MonoBehaviour
             "Label",
             "SHOW TUTORIAL AGAIN",
             24f,
-            RuntimeUIFactory.TextColor,
+            Color.white,
             TextAlignmentOptions.Left,
             fontAsset
         );
@@ -526,7 +526,7 @@ public class SettingsMenuController : MonoBehaviour
             "Description",
             "Replays the first-start tutorial over the game scene.",
             18f,
-            RuntimeUIFactory.TextMuted,
+            Color.white,
             TextAlignmentOptions.Left,
             fontAsset
         );

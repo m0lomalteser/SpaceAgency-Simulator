@@ -1,33 +1,33 @@
 {
-    "rocketName": "Rocket_20261115_173137",
-    "savedAt": "2026-11-15 17:31:37",
-    "totalCost": 23205000,
-    "totalWeightKg": 462.0,
-    "totalFuelUnits": 5270.0,
-    "totalThrustKn": 75.0,
-    "durabilityHp": 197.0,
-    "explosionProbability": 0.7089999914169312,
+    "rocketName": "Rocket_20261115_191235",
+    "savedAt": "2026-11-15 19:12:35",
+    "totalCost": 12642500,
+    "totalWeightKg": 442.0,
+    "totalFuelUnits": 2400.0,
+    "totalThrustKn": 50.0,
+    "durabilityHp": 162.0,
+    "explosionProbability": 0.7149999737739563,
     "reuseUsesRemaining": 1,
     "parts": [
         {
             "slot": "P",
-            "id": "P1_02_CubeSat-Spitze_Mini",
-            "partName": "CubeSat Deployer",
-            "costUsd": 780000,
-            "weightKg": 60.0,
+            "id": "P1_01_Test-Nasenkegel_(Leer)",
+            "partName": "Empty Nose Cone",
+            "costUsd": 292500,
+            "weightKg": 40.0,
             "fuelUnits": 0.0,
             "thrustKn": 0.0,
-            "durabilityHp": 35.0
+            "durabilityHp": 20.0
         },
         {
             "slot": "U",
-            "id": "U2_03_Vakuum-Stufe_Terrier",
-            "partName": "Terrier Vacuum Stage",
-            "costUsd": 11700000,
+            "id": "U2_01_Keine_Oberstufe_(Adapter)",
+            "partName": "Stage Adapter",
+            "costUsd": 1625000,
             "weightKg": 120.0,
-            "fuelUnits": 2870.0,
-            "thrustKn": 25.0,
-            "durabilityHp": 70.0
+            "fuelUnits": 0.0,
+            "thrustKn": 0.0,
+            "durabilityHp": 50.0
         },
         {
             "slot": "T",

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,9 +18,15 @@ public static class RuntimeUIFactory
     public static readonly Color PanelLight = new Color(0.060f, 0.100f, 0.170f, 1f);
     public static readonly Color Accent = new Color(0.20f, 0.88f, 1f, 1f);
     public static readonly Color AccentSoft = new Color(0.20f, 0.88f, 1f, 0.20f);
-    public static readonly Color TextColor = new Color(0.91f, 0.96f, 1f, 1f);
+    public static readonly Color TextColor = new Color(1f, 1f, 1f, 1f);
     public static readonly Color TextMuted = new Color(0.60f, 0.70f, 0.80f, 1f);
     public static readonly Color Danger = new Color(1f, 0.42f, 0.38f, 1f);
+
+    // Das Standard-TMP-Material des Projekts hat eine schwarze Face-Farbe.
+    // Für die zur Laufzeit erzeugten Overlays brauchen wir ein weißes Material.
+    private static readonly Dictionary<TMP_FontAsset, Material> WhiteFaceMaterials =
+        new Dictionary<TMP_FontAsset, Material>();
+
 
     // =========================================================
     // CANVAS / EVENT SYSTEM
@@ -168,6 +175,29 @@ public static class RuntimeUIFactory
     // TEXT
     // =========================================================
 
+    private static Material GetWhiteFaceMaterial(TMP_FontAsset font)
+    {
+        if (font == null)
+            return null;
+
+        Material source = font.material;
+        if (source == null || !source.HasProperty("_FaceColor"))
+            return null;
+
+        Color face = source.GetColor("_FaceColor");
+        if (face.r >= 0.99f && face.g >= 0.99f && face.b >= 0.99f)
+            return null;
+
+        Material cached;
+        if (WhiteFaceMaterials.TryGetValue(font, out cached) && cached != null)
+            return cached;
+
+        Material white = new Material(source);
+        white.SetColor("_FaceColor", Color.white);
+        WhiteFaceMaterials[font] = white;
+        return white;
+    }
+
     public static TextMeshProUGUI CreateText(
         Transform parent,
         string name,
@@ -193,6 +223,14 @@ public static class RuntimeUIFactory
 
         if (font != null)
             text.font = font;
+
+        TMP_FontAsset effectiveFont = text.font != null
+            ? text.font
+            : TMP_Settings.defaultFontAsset;
+
+        Material whiteFace = GetWhiteFaceMaterial(effectiveFont);
+        if (whiteFace != null)
+            text.fontMaterial = whiteFace;
 
         text.text = content;
         text.fontSize = fontSize;

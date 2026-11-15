@@ -118,6 +118,14 @@ public class OverlayGameServices : MonoBehaviour
         if (!OverlayInput.EscapePressed)
             return;
 
+        // Das NASA-Briefing liegt über dem Spiel und schließt mit ESC.
+        if (NasaBriefingOverlay.Instance != null &&
+            (NasaBriefingOverlay.Instance.IsVisible ||
+             NasaBriefingOverlay.EscapeConsumed))
+        {
+            return;
+        }
+
         if (!IsPausableScene(SceneManager.GetActiveScene().name))
             return;
 

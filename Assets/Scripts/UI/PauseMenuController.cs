@@ -67,6 +67,14 @@ public class PauseMenuController : MonoBehaviour
         if (Time.unscaledTime - openedAt < 0.35f)
             return;
 
+        // Das NASA-Briefing liegt über dem Pause-Menü und schließt mit ESC.
+        if (NasaBriefingOverlay.Instance != null &&
+            (NasaBriefingOverlay.Instance.IsVisible ||
+             NasaBriefingOverlay.EscapeConsumed))
+        {
+            return;
+        }
+
         if (OverlayInput.EscapePressed)
             Resume();
     }
@@ -123,7 +131,7 @@ public class PauseMenuController : MonoBehaviour
             "Title",
             "PAUSED",
             58f,
-            RuntimeUIFactory.Accent,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -143,7 +151,7 @@ public class PauseMenuController : MonoBehaviour
             "Subtitle",
             "The clock keeps running. Take your time.",
             20f,
-            RuntimeUIFactory.TextMuted,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -170,14 +178,24 @@ public class PauseMenuController : MonoBehaviour
             new Vector2(0f, -148f)
         );
 
-        float y = 145f;
+        float y = 150f;
 
         CreateMenuButton(panel.transform, "RESUME", y, Resume, true);
-        y -= 84f;
+        y -= 78f;
 
         CreateMenuButton(
             panel.transform, "SETTINGS", y, OpenSettings, false);
-        y -= 84f;
+        y -= 78f;
+
+        CreateMenuButton(
+            panel.transform,
+            "NASA BRIEFING",
+            y,
+            OpenNasaBriefing,
+            false
+        );
+
+        y -= 78f;
 
         bool canReplay =
             showReplayTutorial &&
@@ -193,12 +211,12 @@ public class PauseMenuController : MonoBehaviour
                 false
             );
 
-            y -= 84f;
+            y -= 78f;
         }
 
         CreateMenuButton(
             panel.transform, "MAIN MENU", y, ReturnToMainMenu, false);
-        y -= 84f;
+        y -= 78f;
 
         CreateMenuButton(panel.transform, "QUIT GAME", y, QuitGame, false);
 
@@ -207,7 +225,7 @@ public class PauseMenuController : MonoBehaviour
             "Hint",
             "ESC to resume",
             17f,
-            RuntimeUIFactory.TextMuted,
+            Color.white,
             TextAlignmentOptions.Center,
             fontAsset
         );
@@ -283,6 +301,21 @@ public class PauseMenuController : MonoBehaviour
         }
 
         SceneManager.LoadScene(settingsScene, LoadSceneMode.Additive);
+    }
+
+    public void OpenNasaBriefing()
+    {
+        NasaBriefingOverlay overlay = NasaBriefingOverlay.Instance;
+
+        if (overlay != null)
+        {
+            overlay.Show();
+            return;
+        }
+
+        Debug.LogWarning(
+            "[PauseMenu] NasaBriefingOverlay wurde nicht gefunden."
+        );
     }
 
     public void ReplayTutorial()

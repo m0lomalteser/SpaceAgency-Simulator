@@ -19,7 +19,7 @@ public class SpaceAgencySaveData
     public string agencyName = "";
     public string logoPng = "";
 
-    public long money = 30000000;
+    public long money = 300000000;
     public float mood = 40f;
 
     public int day = 1;
@@ -463,7 +463,7 @@ public class AgencyManager : MonoBehaviour,
         data.agencyName = "";
         data.logoPng = "";
 
-        data.money = 30000000;
+        data.money = 300000000;
         data.mood = 40f;
 
         data.day = 1;
